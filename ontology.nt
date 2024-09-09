@@ -1,0 +1,780 @@
+<http://visualdataweb.org/newOntology/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://visualdataweb.org/newOntology/> <http://purl.org/dc/elements/1.1/#description> "An ontology about the football domain"@en .
+<http://visualdataweb.org/newOntology/> <http://purl.org/dc/elements/1.1/#license> "https://creativecommons.org/licenses/by/4.0/" .
+<http://visualdataweb.org/newOntology/> <http://purl.org/dc/elements/1.1/#title> "Footology"@en .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/#description
+<http://purl.org/dc/elements/1.1/#description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/#license
+<http://purl.org/dc/elements/1.1/#license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/#title
+<http://purl.org/dc/elements/1.1/#title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://visualdataweb.org/newOntology/competesIn
+<http://visualdataweb.org/newOntology/competesIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://visualdataweb.org/newOntology/competesIn> <http://www.w3.org/2002/07/owl#inverseOf> <http://visualdataweb.org/newOntology/includes> .
+<http://visualdataweb.org/newOntology/competesIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://visualdataweb.org/newOntology/Team> .
+<http://visualdataweb.org/newOntology/competesIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://visualdataweb.org/newOntology/Match> .
+<http://visualdataweb.org/newOntology/competesIn> <http://www.w3.org/2000/01/rdf-schema#comment> "This represents a relationship between a team and a match" .
+<http://visualdataweb.org/newOntology/competesIn> <http://www.w3.org/2000/01/rdf-schema#label> "competesIn"@en .
+<http://visualdataweb.org/newOntology/competesIn> <http://www.w3.org/2000/01/rdf-schema#label> "competesIn"@iri-based .
+# 
+# http://visualdataweb.org/newOntology/hasPosition
+<http://visualdataweb.org/newOntology/hasPosition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://visualdataweb.org/newOntology/hasPosition> <http://www.w3.org/2002/07/owl#inverseOf> <http://visualdataweb.org/newOntology/isPositionOf> .
+<http://visualdataweb.org/newOntology/hasPosition> <http://www.w3.org/2000/01/rdf-schema#domain> <http://visualdataweb.org/newOntology/Player> .
+<http://visualdataweb.org/newOntology/hasPosition> <http://www.w3.org/2000/01/rdf-schema#range> <http://visualdataweb.org/newOntology/Position> .
+<http://visualdataweb.org/newOntology/hasPosition> <http://www.w3.org/2000/01/rdf-schema#comment> "This shows the position of a specific player" .
+<http://visualdataweb.org/newOntology/hasPosition> <http://www.w3.org/2000/01/rdf-schema#label> "hasPosition"@en .
+# 
+# http://visualdataweb.org/newOntology/hasStats
+<http://visualdataweb.org/newOntology/hasStats> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://visualdataweb.org/newOntology/hasStats> <http://www.w3.org/2002/07/owl#inverseOf> <http://visualdataweb.org/newOntology/statsOf> .
+<http://visualdataweb.org/newOntology/hasStats> <http://www.w3.org/2000/01/rdf-schema#domain> <http://visualdataweb.org/newOntology/Player> .
+<http://visualdataweb.org/newOntology/hasStats> <http://www.w3.org/2000/01/rdf-schema#range> <http://visualdataweb.org/newOntology/PerformanceStats> .
+<http://visualdataweb.org/newOntology/hasStats> <http://www.w3.org/2000/01/rdf-schema#comment> "The performance stats of a specific player, like goals, assists, and so on" .
+<http://visualdataweb.org/newOntology/hasStats> <http://www.w3.org/2000/01/rdf-schema#label> "hasStats"@en .
+<http://visualdataweb.org/newOntology/hasStats> <http://www.w3.org/2000/01/rdf-schema#label> "hasStats"@iri-based .
+# 
+# http://visualdataweb.org/newOntology/hasTeam
+<http://visualdataweb.org/newOntology/hasTeam> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://visualdataweb.org/newOntology/hasTeam> <http://www.w3.org/2002/07/owl#inverseOf> <http://visualdataweb.org/newOntology/partOf> .
+<http://visualdataweb.org/newOntology/hasTeam> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://visualdataweb.org/newOntology/hasTeam> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://visualdataweb.org/newOntology/hasTeam> <http://www.w3.org/2000/01/rdf-schema#domain> <http://visualdataweb.org/newOntology/Tournament> .
+<http://visualdataweb.org/newOntology/hasTeam> <http://www.w3.org/2000/01/rdf-schema#range> <http://visualdataweb.org/newOntology/Team> .
+<http://visualdataweb.org/newOntology/hasTeam> <http://www.w3.org/2000/01/rdf-schema#comment> "A team included in a tournament" .
+<http://visualdataweb.org/newOntology/hasTeam> <http://www.w3.org/2000/01/rdf-schema#label> "hasTeam" .
+# 
+# http://visualdataweb.org/newOntology/hostedBy
+<http://visualdataweb.org/newOntology/hostedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://visualdataweb.org/newOntology/hostedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://visualdataweb.org/newOntology/hosts> .
+<http://visualdataweb.org/newOntology/hostedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://visualdataweb.org/newOntology/hostedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://visualdataweb.org/newOntology/Match> .
+<http://visualdataweb.org/newOntology/hostedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://visualdataweb.org/newOntology/Stadium> .
+<http://visualdataweb.org/newOntology/hostedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "The stadium of a specific team of a match" .
+<http://visualdataweb.org/newOntology/hostedBy> <http://www.w3.org/2000/01/rdf-schema#label> "hostedBy"@en .
+<http://visualdataweb.org/newOntology/hostedBy> <http://www.w3.org/2000/01/rdf-schema#label> "hostedBy"@iri-based .
+# 
+# http://visualdataweb.org/newOntology/hosts
+<http://visualdataweb.org/newOntology/hosts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://visualdataweb.org/newOntology/hosts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://visualdataweb.org/newOntology/hosts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://visualdataweb.org/newOntology/hosts> <http://www.w3.org/2000/01/rdf-schema#domain> <http://visualdataweb.org/newOntology/Stadium> .
+<http://visualdataweb.org/newOntology/hosts> <http://www.w3.org/2000/01/rdf-schema#range> <http://visualdataweb.org/newOntology/Match> .
+<http://visualdataweb.org/newOntology/hosts> <http://www.w3.org/2000/01/rdf-schema#comment> "The stadium in which a match takes place" .
+<http://visualdataweb.org/newOntology/hosts> <http://www.w3.org/2000/01/rdf-schema#label> "hosts" .
+# 
+# http://visualdataweb.org/newOntology/includes
+<http://visualdataweb.org/newOntology/includes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://visualdataweb.org/newOntology/includes> <http://www.w3.org/2000/01/rdf-schema#domain> <http://visualdataweb.org/newOntology/Match> .
+<http://visualdataweb.org/newOntology/includes> <http://www.w3.org/2000/01/rdf-schema#range> <http://visualdataweb.org/newOntology/Team> .
+<http://visualdataweb.org/newOntology/includes> <http://www.w3.org/2000/01/rdf-schema#comment> "A match won by a team" .
+<http://visualdataweb.org/newOntology/includes> <http://www.w3.org/2000/01/rdf-schema#label> "isWonBy" .
+# 
+# http://visualdataweb.org/newOntology/includesPlayer
+<http://visualdataweb.org/newOntology/includesPlayer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://visualdataweb.org/newOntology/includesPlayer> <http://www.w3.org/2002/07/owl#inverseOf> <http://visualdataweb.org/newOntology/playsFor> .
+<http://visualdataweb.org/newOntology/includesPlayer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://visualdataweb.org/newOntology/includesPlayer> <http://www.w3.org/2000/01/rdf-schema#domain> <http://visualdataweb.org/newOntology/Team> .
+<http://visualdataweb.org/newOntology/includesPlayer> <http://www.w3.org/2000/01/rdf-schema#range> <http://visualdataweb.org/newOntology/Player> .
+<http://visualdataweb.org/newOntology/includesPlayer> <http://www.w3.org/2000/01/rdf-schema#comment> "A player included in a team" .
+<http://visualdataweb.org/newOntology/includesPlayer> <http://www.w3.org/2000/01/rdf-schema#label> "includesPlayer" .
+# 
+# http://visualdataweb.org/newOntology/isHomeOf
+<http://visualdataweb.org/newOntology/isHomeOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://visualdataweb.org/newOntology/isHomeOf> <http://www.w3.org/2002/07/owl#inverseOf> <http://visualdataweb.org/newOntology/playsIn> .
+<http://visualdataweb.org/newOntology/isHomeOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://visualdataweb.org/newOntology/Stadium> .
+<http://visualdataweb.org/newOntology/isHomeOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://visualdataweb.org/newOntology/Team> .
+<http://visualdataweb.org/newOntology/isHomeOf> <http://www.w3.org/2000/01/rdf-schema#comment> "A stadium a team is home of" .
+<http://visualdataweb.org/newOntology/isHomeOf> <http://www.w3.org/2000/01/rdf-schema#label> "isHomeOf" .
+# 
+# http://visualdataweb.org/newOntology/isPositionOf
+<http://visualdataweb.org/newOntology/isPositionOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://visualdataweb.org/newOntology/isPositionOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://visualdataweb.org/newOntology/Position> .
+<http://visualdataweb.org/newOntology/isPositionOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://visualdataweb.org/newOntology/Player> .
+<http://visualdataweb.org/newOntology/isPositionOf> <http://www.w3.org/2000/01/rdf-schema#comment> "A position held by a player" .
+<http://visualdataweb.org/newOntology/isPositionOf> <http://www.w3.org/2000/01/rdf-schema#label> "isPositionOf" .
+# 
+# http://visualdataweb.org/newOntology/isWonBy
+<http://visualdataweb.org/newOntology/isWonBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://visualdataweb.org/newOntology/isWonBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://visualdataweb.org/newOntology/wins> .
+<http://visualdataweb.org/newOntology/isWonBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://visualdataweb.org/newOntology/Trophy> .
+<http://visualdataweb.org/newOntology/isWonBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://visualdataweb.org/newOntology/Team> .
+<http://visualdataweb.org/newOntology/isWonBy> <http://www.w3.org/2000/01/rdf-schema#comment> "A trophy won by a team" .
+<http://visualdataweb.org/newOntology/isWonBy> <http://www.w3.org/2000/01/rdf-schema#label> "isWonBy" .
+# 
+# http://visualdataweb.org/newOntology/managedBy
+<http://visualdataweb.org/newOntology/managedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://visualdataweb.org/newOntology/managedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://visualdataweb.org/newOntology/manages> .
+<http://visualdataweb.org/newOntology/managedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://visualdataweb.org/newOntology/managedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://visualdataweb.org/newOntology/managedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://visualdataweb.org/newOntology/Team> .
+<http://visualdataweb.org/newOntology/managedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://visualdataweb.org/newOntology/Coach> .
+<http://visualdataweb.org/newOntology/managedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "A team managed by a coach" .
+<http://visualdataweb.org/newOntology/managedBy> <http://www.w3.org/2000/01/rdf-schema#label> "managedBy" .
+# 
+# http://visualdataweb.org/newOntology/manages
+<http://visualdataweb.org/newOntology/manages> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://visualdataweb.org/newOntology/manages> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://visualdataweb.org/newOntology/manages> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://visualdataweb.org/newOntology/manages> <http://www.w3.org/2000/01/rdf-schema#domain> <http://visualdataweb.org/newOntology/Coach> .
+<http://visualdataweb.org/newOntology/manages> <http://www.w3.org/2000/01/rdf-schema#range> <http://visualdataweb.org/newOntology/Team> .
+<http://visualdataweb.org/newOntology/manages> <http://www.w3.org/2000/01/rdf-schema#comment> "The coach that manages a team" .
+<http://visualdataweb.org/newOntology/manages> <http://www.w3.org/2000/01/rdf-schema#label> "manages"@en .
+<http://visualdataweb.org/newOntology/manages> <http://www.w3.org/2000/01/rdf-schema#label> "manages"@iri-based .
+# 
+# http://visualdataweb.org/newOntology/officiatedBy
+<http://visualdataweb.org/newOntology/officiatedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://visualdataweb.org/newOntology/officiatedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://visualdataweb.org/newOntology/officiates> .
+<http://visualdataweb.org/newOntology/officiatedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://visualdataweb.org/newOntology/Match> .
+<http://visualdataweb.org/newOntology/officiatedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://visualdataweb.org/newOntology/Referee> .
+<http://visualdataweb.org/newOntology/officiatedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "A match officiated by a referee" .
+<http://visualdataweb.org/newOntology/officiatedBy> <http://www.w3.org/2000/01/rdf-schema#label> "officiatedBy" .
+# 
+# http://visualdataweb.org/newOntology/officiates
+<http://visualdataweb.org/newOntology/officiates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://visualdataweb.org/newOntology/officiates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://visualdataweb.org/newOntology/officiates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://visualdataweb.org/newOntology/officiates> <http://www.w3.org/2000/01/rdf-schema#domain> <http://visualdataweb.org/newOntology/Referee> .
+<http://visualdataweb.org/newOntology/officiates> <http://www.w3.org/2000/01/rdf-schema#range> <http://visualdataweb.org/newOntology/Match> .
+<http://visualdataweb.org/newOntology/officiates> <http://www.w3.org/2000/01/rdf-schema#comment> "The referee that officiates a specific match" .
+<http://visualdataweb.org/newOntology/officiates> <http://www.w3.org/2000/01/rdf-schema#label> "officiates"@en .
+<http://visualdataweb.org/newOntology/officiates> <http://www.w3.org/2000/01/rdf-schema#label> "officiates"@iri-based .
+# 
+# http://visualdataweb.org/newOntology/partOf
+<http://visualdataweb.org/newOntology/partOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://visualdataweb.org/newOntology/partOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://visualdataweb.org/newOntology/partOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://visualdataweb.org/newOntology/partOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://visualdataweb.org/newOntology/Team> .
+<http://visualdataweb.org/newOntology/partOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://visualdataweb.org/newOntology/Tournament> .
+<http://visualdataweb.org/newOntology/partOf> <http://www.w3.org/2000/01/rdf-schema#comment> "The tournament a specific team is part of" .
+<http://visualdataweb.org/newOntology/partOf> <http://www.w3.org/2000/01/rdf-schema#label> "partOf"@en .
+<http://visualdataweb.org/newOntology/partOf> <http://www.w3.org/2000/01/rdf-schema#label> "partOf"@iri-based .
+# 
+# http://visualdataweb.org/newOntology/playsFor
+<http://visualdataweb.org/newOntology/playsFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://visualdataweb.org/newOntology/playsFor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://visualdataweb.org/newOntology/Player> .
+<http://visualdataweb.org/newOntology/playsFor> <http://www.w3.org/2000/01/rdf-schema#range> <http://visualdataweb.org/newOntology/Team> .
+<http://visualdataweb.org/newOntology/playsFor> <http://www.w3.org/2000/01/rdf-schema#comment> "The team a specific player is playing for" .
+<http://visualdataweb.org/newOntology/playsFor> <http://www.w3.org/2000/01/rdf-schema#label> "playsFor"@en .
+<http://visualdataweb.org/newOntology/playsFor> <http://www.w3.org/2000/01/rdf-schema#label> "playsFor"@iri-based .
+# 
+# http://visualdataweb.org/newOntology/playsIn
+<http://visualdataweb.org/newOntology/playsIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://visualdataweb.org/newOntology/playsIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://visualdataweb.org/newOntology/playsIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://visualdataweb.org/newOntology/playsIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://visualdataweb.org/newOntology/Team> .
+<http://visualdataweb.org/newOntology/playsIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://visualdataweb.org/newOntology/Stadium> .
+<http://visualdataweb.org/newOntology/playsIn> <http://www.w3.org/2000/01/rdf-schema#comment> "The home stadium of a team" .
+<http://visualdataweb.org/newOntology/playsIn> <http://www.w3.org/2000/01/rdf-schema#label> "playsIn"@en .
+<http://visualdataweb.org/newOntology/playsIn> <http://www.w3.org/2000/01/rdf-schema#label> "playsIn"@iri-based .
+# 
+# http://visualdataweb.org/newOntology/receivedBy
+<http://visualdataweb.org/newOntology/receivedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://visualdataweb.org/newOntology/receivedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://visualdataweb.org/newOntology/receives> .
+<http://visualdataweb.org/newOntology/receivedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://visualdataweb.org/newOntology/receivedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://visualdataweb.org/newOntology/receivedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://visualdataweb.org/newOntology/Award> .
+<http://visualdataweb.org/newOntology/receivedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://visualdataweb.org/newOntology/Player> .
+<http://visualdataweb.org/newOntology/receivedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "An individual award received by a player" .
+<http://visualdataweb.org/newOntology/receivedBy> <http://www.w3.org/2000/01/rdf-schema#label> "receivedBy" .
+# 
+# http://visualdataweb.org/newOntology/receives
+<http://visualdataweb.org/newOntology/receives> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://visualdataweb.org/newOntology/receives> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://visualdataweb.org/newOntology/receives> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://visualdataweb.org/newOntology/receives> <http://www.w3.org/2000/01/rdf-schema#domain> <http://visualdataweb.org/newOntology/Player> .
+<http://visualdataweb.org/newOntology/receives> <http://www.w3.org/2000/01/rdf-schema#range> <http://visualdataweb.org/newOntology/Award> .
+<http://visualdataweb.org/newOntology/receives> <http://www.w3.org/2000/01/rdf-schema#comment> "An indivual award won by a player" .
+<http://visualdataweb.org/newOntology/receives> <http://www.w3.org/2000/01/rdf-schema#label> "receives"@en .
+<http://visualdataweb.org/newOntology/receives> <http://www.w3.org/2000/01/rdf-schema#label> "receives"@iri-based .
+# 
+# http://visualdataweb.org/newOntology/statsOf
+<http://visualdataweb.org/newOntology/statsOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://visualdataweb.org/newOntology/statsOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://visualdataweb.org/newOntology/PerformanceStats> .
+<http://visualdataweb.org/newOntology/statsOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://visualdataweb.org/newOntology/Player> .
+<http://visualdataweb.org/newOntology/statsOf> <http://www.w3.org/2000/01/rdf-schema#comment> "The performance stats of a player" .
+<http://visualdataweb.org/newOntology/statsOf> <http://www.w3.org/2000/01/rdf-schema#label> "statsOf" .
+# 
+# http://visualdataweb.org/newOntology/wins
+<http://visualdataweb.org/newOntology/wins> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://visualdataweb.org/newOntology/wins> <http://www.w3.org/2000/01/rdf-schema#domain> <http://visualdataweb.org/newOntology/Team> .
+<http://visualdataweb.org/newOntology/wins> <http://www.w3.org/2000/01/rdf-schema#range> <http://visualdataweb.org/newOntology/Trophy> .
+<http://visualdataweb.org/newOntology/wins> <http://www.w3.org/2000/01/rdf-schema#comment> "A team that wins a trophy" .
+<http://visualdataweb.org/newOntology/wins> <http://www.w3.org/2000/01/rdf-schema#label> "wins"@en .
+<http://visualdataweb.org/newOntology/wins> <http://www.w3.org/2000/01/rdf-schema#label> "wins"@iri-based .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://visualdataweb.org/newOntology/Assists
+<http://visualdataweb.org/newOntology/Assists> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://visualdataweb.org/newOntology/Assists> <http://www.w3.org/2000/01/rdf-schema#domain> <http://visualdataweb.org/newOntology/PerformanceStats> .
+<http://visualdataweb.org/newOntology/Assists> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://visualdataweb.org/newOntology/Assists> <http://www.w3.org/2000/01/rdf-schema#comment> "The assists of a specific player within a season" .
+<http://visualdataweb.org/newOntology/Assists> <http://www.w3.org/2000/01/rdf-schema#label> "Assists"@en .
+<http://visualdataweb.org/newOntology/Assists> <http://www.w3.org/2000/01/rdf-schema#label> "Assists"@iri-based .
+# 
+# http://visualdataweb.org/newOntology/AwardName
+<http://visualdataweb.org/newOntology/AwardName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://visualdataweb.org/newOntology/AwardName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://visualdataweb.org/newOntology/Award> .
+<http://visualdataweb.org/newOntology/AwardName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://visualdataweb.org/newOntology/AwardName> <http://www.w3.org/2000/01/rdf-schema#comment> "The indivual award name" .
+<http://visualdataweb.org/newOntology/AwardName> <http://www.w3.org/2000/01/rdf-schema#label> "AwardName"@en .
+<http://visualdataweb.org/newOntology/AwardName> <http://www.w3.org/2000/01/rdf-schema#label> "AwardName"@iri-based .
+# 
+# http://visualdataweb.org/newOntology/AwardSeason
+<http://visualdataweb.org/newOntology/AwardSeason> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://visualdataweb.org/newOntology/AwardSeason> <http://www.w3.org/2000/01/rdf-schema#domain> <http://visualdataweb.org/newOntology/Award> .
+<http://visualdataweb.org/newOntology/AwardSeason> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://visualdataweb.org/newOntology/AwardSeason> <http://www.w3.org/2000/01/rdf-schema#comment> "The season of an award" .
+<http://visualdataweb.org/newOntology/AwardSeason> <http://www.w3.org/2000/01/rdf-schema#label> "AwardSeason"@en .
+<http://visualdataweb.org/newOntology/AwardSeason> <http://www.w3.org/2000/01/rdf-schema#label> "AwardSeason"@iri-based .
+# 
+# http://visualdataweb.org/newOntology/CPreferredFormation
+<http://visualdataweb.org/newOntology/CPreferredFormation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://visualdataweb.org/newOntology/CPreferredFormation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://visualdataweb.org/newOntology/Coach> .
+<http://visualdataweb.org/newOntology/CPreferredFormation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://visualdataweb.org/newOntology/CPreferredFormation> <http://www.w3.org/2000/01/rdf-schema#comment> "The preferred formation of a coach" .
+<http://visualdataweb.org/newOntology/CPreferredFormation> <http://www.w3.org/2000/01/rdf-schema#label> "CPreferredFormation"@en .
+<http://visualdataweb.org/newOntology/CPreferredFormation> <http://www.w3.org/2000/01/rdf-schema#label> "CPreferredFormation"@iri-based .
+# 
+# http://visualdataweb.org/newOntology/CPreviousTeams
+<http://visualdataweb.org/newOntology/CPreviousTeams> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://visualdataweb.org/newOntology/CPreviousTeams> <http://www.w3.org/2000/01/rdf-schema#domain> <http://visualdataweb.org/newOntology/Coach> .
+<http://visualdataweb.org/newOntology/CPreviousTeams> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://visualdataweb.org/newOntology/CPreviousTeams> <http://www.w3.org/2000/01/rdf-schema#comment> "The previous teams a coach has managed so far" .
+<http://visualdataweb.org/newOntology/CPreviousTeams> <http://www.w3.org/2000/01/rdf-schema#label> "CPreviousTeams"@en .
+<http://visualdataweb.org/newOntology/CPreviousTeams> <http://www.w3.org/2000/01/rdf-schema#label> "CPreviousTeams"@iri-based .
+# 
+# http://visualdataweb.org/newOntology/Capacity
+<http://visualdataweb.org/newOntology/Capacity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://visualdataweb.org/newOntology/Capacity> <http://www.w3.org/2000/01/rdf-schema#domain> <http://visualdataweb.org/newOntology/Stadium> .
+<http://visualdataweb.org/newOntology/Capacity> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://visualdataweb.org/newOntology/Capacity> <http://www.w3.org/2000/01/rdf-schema#comment> "The capacity of a stadium" .
+<http://visualdataweb.org/newOntology/Capacity> <http://www.w3.org/2000/01/rdf-schema#label> "Capacity"@en .
+<http://visualdataweb.org/newOntology/Capacity> <http://www.w3.org/2000/01/rdf-schema#label> "Capacity"@iri-based .
+# 
+# http://visualdataweb.org/newOntology/Champion
+<http://visualdataweb.org/newOntology/Champion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://visualdataweb.org/newOntology/Champion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://visualdataweb.org/newOntology/League> .
+<http://visualdataweb.org/newOntology/Champion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://visualdataweb.org/newOntology/Champion> <http://www.w3.org/2000/01/rdf-schema#comment> "The current champion of a League" .
+<http://visualdataweb.org/newOntology/Champion> <http://www.w3.org/2000/01/rdf-schema#label> "Champion"@en .
+<http://visualdataweb.org/newOntology/Champion> <http://www.w3.org/2000/01/rdf-schema#label> "Champion"@iri-based .
+# 
+# http://visualdataweb.org/newOntology/CoachName
+<http://visualdataweb.org/newOntology/CoachName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://visualdataweb.org/newOntology/CoachName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://visualdataweb.org/newOntology/Coach> .
+<http://visualdataweb.org/newOntology/CoachName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://visualdataweb.org/newOntology/CoachName> <http://www.w3.org/2000/01/rdf-schema#comment> "The name of a team coach" .
+<http://visualdataweb.org/newOntology/CoachName> <http://www.w3.org/2000/01/rdf-schema#label> "CoachName"@en .
+<http://visualdataweb.org/newOntology/CoachName> <http://www.w3.org/2000/01/rdf-schema#label> "CoachName"@iri-based .
+# 
+# http://visualdataweb.org/newOntology/CoachNationality
+<http://visualdataweb.org/newOntology/CoachNationality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://visualdataweb.org/newOntology/CoachNationality> <http://www.w3.org/2000/01/rdf-schema#domain> <http://visualdataweb.org/newOntology/Coach> .
+<http://visualdataweb.org/newOntology/CoachNationality> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://visualdataweb.org/newOntology/CoachNationality> <http://www.w3.org/2000/01/rdf-schema#comment> "The nationality of a coach" .
+<http://visualdataweb.org/newOntology/CoachNationality> <http://www.w3.org/2000/01/rdf-schema#label> "CoachNationality"@en .
+<http://visualdataweb.org/newOntology/CoachNationality> <http://www.w3.org/2000/01/rdf-schema#label> "CoachNationality"@iri-based .
+# 
+# http://visualdataweb.org/newOntology/Date
+<http://visualdataweb.org/newOntology/Date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://visualdataweb.org/newOntology/Date> <http://www.w3.org/2000/01/rdf-schema#domain> <http://visualdataweb.org/newOntology/Match> .
+<http://visualdataweb.org/newOntology/Date> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://visualdataweb.org/newOntology/Date> <http://www.w3.org/2000/01/rdf-schema#comment> "The date when a match took place" .
+<http://visualdataweb.org/newOntology/Date> <http://www.w3.org/2000/01/rdf-schema#label> "Date"@en .
+<http://visualdataweb.org/newOntology/Date> <http://www.w3.org/2000/01/rdf-schema#label> "Date"@iri-based .
+# 
+# http://visualdataweb.org/newOntology/Fouls
+<http://visualdataweb.org/newOntology/Fouls> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://visualdataweb.org/newOntology/Fouls> <http://www.w3.org/2000/01/rdf-schema#domain> <http://visualdataweb.org/newOntology/PerformanceStats> .
+<http://visualdataweb.org/newOntology/Fouls> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://visualdataweb.org/newOntology/Fouls> <http://www.w3.org/2000/01/rdf-schema#comment> "The fouls commited by a player" .
+<http://visualdataweb.org/newOntology/Fouls> <http://www.w3.org/2000/01/rdf-schema#label> "Fouls"@en .
+<http://visualdataweb.org/newOntology/Fouls> <http://www.w3.org/2000/01/rdf-schema#label> "Fouls"@iri-based .
+# 
+# http://visualdataweb.org/newOntology/GoalsScored
+<http://visualdataweb.org/newOntology/GoalsScored> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://visualdataweb.org/newOntology/GoalsScored> <http://www.w3.org/2000/01/rdf-schema#domain> <http://visualdataweb.org/newOntology/PerformanceStats> .
+<http://visualdataweb.org/newOntology/GoalsScored> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://visualdataweb.org/newOntology/GoalsScored> <http://www.w3.org/2000/01/rdf-schema#comment> "The goals scored by a player" .
+<http://visualdataweb.org/newOntology/GoalsScored> <http://www.w3.org/2000/01/rdf-schema#label> "GoalsScored"@en .
+<http://visualdataweb.org/newOntology/GoalsScored> <http://www.w3.org/2000/01/rdf-schema#label> "GoalsScored"@iri-based .
+# 
+# http://visualdataweb.org/newOntology/HomeTeam
+<http://visualdataweb.org/newOntology/HomeTeam> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://visualdataweb.org/newOntology/HomeTeam> <http://www.w3.org/2000/01/rdf-schema#domain> <http://visualdataweb.org/newOntology/Stadium> .
+<http://visualdataweb.org/newOntology/HomeTeam> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://visualdataweb.org/newOntology/HomeTeam> <http://www.w3.org/2000/01/rdf-schema#comment> "The home team of a stadium" .
+<http://visualdataweb.org/newOntology/HomeTeam> <http://www.w3.org/2000/01/rdf-schema#label> "HomeTeam"@en .
+<http://visualdataweb.org/newOntology/HomeTeam> <http://www.w3.org/2000/01/rdf-schema#label> "HomeTeam"@iri-based .
+# 
+# http://visualdataweb.org/newOntology/LeagueName
+<http://visualdataweb.org/newOntology/LeagueName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://visualdataweb.org/newOntology/LeagueName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://visualdataweb.org/newOntology/League> .
+<http://visualdataweb.org/newOntology/LeagueName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://visualdataweb.org/newOntology/LeagueName> <http://www.w3.org/2000/01/rdf-schema#comment> "The name of a league" .
+<http://visualdataweb.org/newOntology/LeagueName> <http://www.w3.org/2000/01/rdf-schema#label> "LeagueName"@en .
+<http://visualdataweb.org/newOntology/LeagueName> <http://www.w3.org/2000/01/rdf-schema#label> "LeagueName"@iri-based .
+# 
+# http://visualdataweb.org/newOntology/MatchAwayTeam
+<http://visualdataweb.org/newOntology/MatchAwayTeam> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://visualdataweb.org/newOntology/MatchAwayTeam> <http://www.w3.org/2000/01/rdf-schema#domain> <http://visualdataweb.org/newOntology/Match> .
+<http://visualdataweb.org/newOntology/MatchAwayTeam> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://visualdataweb.org/newOntology/MatchAwayTeam> <http://www.w3.org/2000/01/rdf-schema#comment> "The away team of a specific match" .
+<http://visualdataweb.org/newOntology/MatchAwayTeam> <http://www.w3.org/2000/01/rdf-schema#label> "MatchAwayTeam"@en .
+<http://visualdataweb.org/newOntology/MatchAwayTeam> <http://www.w3.org/2000/01/rdf-schema#label> "MatchAwayTeam"@iri-based .
+# 
+# http://visualdataweb.org/newOntology/MatchHomeTeam
+<http://visualdataweb.org/newOntology/MatchHomeTeam> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://visualdataweb.org/newOntology/MatchHomeTeam> <http://www.w3.org/2000/01/rdf-schema#domain> <http://visualdataweb.org/newOntology/Match> .
+<http://visualdataweb.org/newOntology/MatchHomeTeam> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://visualdataweb.org/newOntology/MatchHomeTeam> <http://www.w3.org/2000/01/rdf-schema#comment> "The home team of a specific match" .
+<http://visualdataweb.org/newOntology/MatchHomeTeam> <http://www.w3.org/2000/01/rdf-schema#label> "MatchHomeTeam"@en .
+<http://visualdataweb.org/newOntology/MatchHomeTeam> <http://www.w3.org/2000/01/rdf-schema#label> "MatchHomeTeam"@iri-based .
+# 
+# http://visualdataweb.org/newOntology/MatchWinner
+<http://visualdataweb.org/newOntology/MatchWinner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://visualdataweb.org/newOntology/MatchWinner> <http://www.w3.org/2000/01/rdf-schema#domain> <http://visualdataweb.org/newOntology/Match> .
+<http://visualdataweb.org/newOntology/MatchWinner> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://visualdataweb.org/newOntology/MatchWinner> <http://www.w3.org/2000/01/rdf-schema#comment> "The winner of a specific match" .
+<http://visualdataweb.org/newOntology/MatchWinner> <http://www.w3.org/2000/01/rdf-schema#label> "MatchWinner"@en .
+<http://visualdataweb.org/newOntology/MatchWinner> <http://www.w3.org/2000/01/rdf-schema#label> "MatchWinner"@iri-based .
+# 
+# http://visualdataweb.org/newOntology/NumberOfTeams
+<http://visualdataweb.org/newOntology/NumberOfTeams> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://visualdataweb.org/newOntology/NumberOfTeams> <http://www.w3.org/2000/01/rdf-schema#domain> <http://visualdataweb.org/newOntology/League> .
+<http://visualdataweb.org/newOntology/NumberOfTeams> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://visualdataweb.org/newOntology/NumberOfTeams> <http://www.w3.org/2000/01/rdf-schema#comment> "The number of teams competing in a specific league" .
+<http://visualdataweb.org/newOntology/NumberOfTeams> <http://www.w3.org/2000/01/rdf-schema#label> "NumberOfTeams"@en .
+<http://visualdataweb.org/newOntology/NumberOfTeams> <http://www.w3.org/2000/01/rdf-schema#label> "NumberOfTeams"@iri-based .
+# 
+# http://visualdataweb.org/newOntology/OpeningYear
+<http://visualdataweb.org/newOntology/OpeningYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://visualdataweb.org/newOntology/OpeningYear> <http://www.w3.org/2000/01/rdf-schema#domain> <http://visualdataweb.org/newOntology/Stadium> .
+<http://visualdataweb.org/newOntology/OpeningYear> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://visualdataweb.org/newOntology/OpeningYear> <http://www.w3.org/2000/01/rdf-schema#comment> "The opening year of a stadium" .
+<http://visualdataweb.org/newOntology/OpeningYear> <http://www.w3.org/2000/01/rdf-schema#label> "OpeningYear"@en .
+<http://visualdataweb.org/newOntology/OpeningYear> <http://www.w3.org/2000/01/rdf-schema#label> "OpeningYear"@iri-based .
+# 
+# http://visualdataweb.org/newOntology/PassAccuracy
+<http://visualdataweb.org/newOntology/PassAccuracy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://visualdataweb.org/newOntology/PassAccuracy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://visualdataweb.org/newOntology/PerformanceStats> .
+<http://visualdataweb.org/newOntology/PassAccuracy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://visualdataweb.org/newOntology/PassAccuracy> <http://www.w3.org/2000/01/rdf-schema#comment> "The pass accuracy of a player in a season" .
+<http://visualdataweb.org/newOntology/PassAccuracy> <http://www.w3.org/2000/01/rdf-schema#label> "PassAccuracy"@en .
+<http://visualdataweb.org/newOntology/PassAccuracy> <http://www.w3.org/2000/01/rdf-schema#label> "PassAccuracy"@iri-based .
+# 
+# http://visualdataweb.org/newOntology/PlayerBirthdate
+<http://visualdataweb.org/newOntology/PlayerBirthdate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://visualdataweb.org/newOntology/PlayerBirthdate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://visualdataweb.org/newOntology/Player> .
+<http://visualdataweb.org/newOntology/PlayerBirthdate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://visualdataweb.org/newOntology/PlayerBirthdate> <http://www.w3.org/2000/01/rdf-schema#comment> "The birthday of a player" .
+<http://visualdataweb.org/newOntology/PlayerBirthdate> <http://www.w3.org/2000/01/rdf-schema#label> "PlayerBirthdate"@en .
+<http://visualdataweb.org/newOntology/PlayerBirthdate> <http://www.w3.org/2000/01/rdf-schema#label> "PlayerBirthdate"@iri-based .
+# 
+# http://visualdataweb.org/newOntology/PlayerName
+<http://visualdataweb.org/newOntology/PlayerName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://visualdataweb.org/newOntology/PlayerName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://visualdataweb.org/newOntology/Player> .
+<http://visualdataweb.org/newOntology/PlayerName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://visualdataweb.org/newOntology/PlayerName> <http://www.w3.org/2000/01/rdf-schema#comment> "The name of a player" .
+<http://visualdataweb.org/newOntology/PlayerName> <http://www.w3.org/2000/01/rdf-schema#label> "PlayerName"@en .
+<http://visualdataweb.org/newOntology/PlayerName> <http://www.w3.org/2000/01/rdf-schema#label> "PlayerName"@iri-based .
+# 
+# http://visualdataweb.org/newOntology/PlayerPosition
+<http://visualdataweb.org/newOntology/PlayerPosition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://visualdataweb.org/newOntology/PlayerPosition> <http://www.w3.org/2000/01/rdf-schema#domain> <http://visualdataweb.org/newOntology/Position> .
+<http://visualdataweb.org/newOntology/PlayerPosition> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://visualdataweb.org/newOntology/PlayerPosition> <http://www.w3.org/2000/01/rdf-schema#comment> "The position of a player" .
+<http://visualdataweb.org/newOntology/PlayerPosition> <http://www.w3.org/2000/01/rdf-schema#label> "PlayerPosition"@en .
+# 
+# http://visualdataweb.org/newOntology/RBirthdate
+<http://visualdataweb.org/newOntology/RBirthdate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://visualdataweb.org/newOntology/RBirthdate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://visualdataweb.org/newOntology/Referee> .
+<http://visualdataweb.org/newOntology/RBirthdate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://visualdataweb.org/newOntology/RBirthdate> <http://www.w3.org/2000/01/rdf-schema#comment> "The birthday of a referee" .
+<http://visualdataweb.org/newOntology/RBirthdate> <http://www.w3.org/2000/01/rdf-schema#label> "RBirthdate"@en .
+<http://visualdataweb.org/newOntology/RBirthdate> <http://www.w3.org/2000/01/rdf-schema#label> "RBirthdate"@iri-based .
+# 
+# http://visualdataweb.org/newOntology/RedCards
+<http://visualdataweb.org/newOntology/RedCards> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://visualdataweb.org/newOntology/RedCards> <http://www.w3.org/2000/01/rdf-schema#domain> <http://visualdataweb.org/newOntology/PerformanceStats> .
+<http://visualdataweb.org/newOntology/RedCards> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://visualdataweb.org/newOntology/RedCards> <http://www.w3.org/2000/01/rdf-schema#comment> "The red cards a player has gotten in a season" .
+<http://visualdataweb.org/newOntology/RedCards> <http://www.w3.org/2000/01/rdf-schema#label> "RedCards"@en .
+<http://visualdataweb.org/newOntology/RedCards> <http://www.w3.org/2000/01/rdf-schema#label> "RedCards"@iri-based .
+# 
+# http://visualdataweb.org/newOntology/RefereeName
+<http://visualdataweb.org/newOntology/RefereeName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://visualdataweb.org/newOntology/RefereeName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://visualdataweb.org/newOntology/Referee> .
+<http://visualdataweb.org/newOntology/RefereeName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://visualdataweb.org/newOntology/RefereeName> <http://www.w3.org/2000/01/rdf-schema#comment> "The name of the referee" .
+<http://visualdataweb.org/newOntology/RefereeName> <http://www.w3.org/2000/01/rdf-schema#label> "RefereeName"@en .
+<http://visualdataweb.org/newOntology/RefereeName> <http://www.w3.org/2000/01/rdf-schema#label> "RefereeName"@iri-based .
+# 
+# http://visualdataweb.org/newOntology/RefereeNationality
+<http://visualdataweb.org/newOntology/RefereeNationality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://visualdataweb.org/newOntology/RefereeNationality> <http://www.w3.org/2000/01/rdf-schema#domain> <http://visualdataweb.org/newOntology/Referee> .
+<http://visualdataweb.org/newOntology/RefereeNationality> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://visualdataweb.org/newOntology/RefereeNationality> <http://www.w3.org/2000/01/rdf-schema#comment> "The nationality of a referee" .
+<http://visualdataweb.org/newOntology/RefereeNationality> <http://www.w3.org/2000/01/rdf-schema#label> "RefereeNationality"@en .
+<http://visualdataweb.org/newOntology/RefereeNationality> <http://www.w3.org/2000/01/rdf-schema#label> "RefereeNationality"@iri-based .
+# 
+# http://visualdataweb.org/newOntology/Region
+<http://visualdataweb.org/newOntology/Region> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://visualdataweb.org/newOntology/Region> <http://www.w3.org/2000/01/rdf-schema#domain> <http://visualdataweb.org/newOntology/League> .
+<http://visualdataweb.org/newOntology/Region> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://visualdataweb.org/newOntology/Region> <http://www.w3.org/2000/01/rdf-schema#comment> "The region or country a league is playing in" .
+<http://visualdataweb.org/newOntology/Region> <http://www.w3.org/2000/01/rdf-schema#label> "Region"@en .
+<http://visualdataweb.org/newOntology/Region> <http://www.w3.org/2000/01/rdf-schema#label> "Region"@iri-based .
+# 
+# http://visualdataweb.org/newOntology/Score
+<http://visualdataweb.org/newOntology/Score> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://visualdataweb.org/newOntology/Score> <http://www.w3.org/2000/01/rdf-schema#domain> <http://visualdataweb.org/newOntology/Match> .
+<http://visualdataweb.org/newOntology/Score> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://visualdataweb.org/newOntology/Score> <http://www.w3.org/2000/01/rdf-schema#comment> "The final score of a match" .
+<http://visualdataweb.org/newOntology/Score> <http://www.w3.org/2000/01/rdf-schema#label> "Score"@en .
+<http://visualdataweb.org/newOntology/Score> <http://www.w3.org/2000/01/rdf-schema#label> "Score"@iri-based .
+# 
+# http://visualdataweb.org/newOntology/Season
+<http://visualdataweb.org/newOntology/Season> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://visualdataweb.org/newOntology/Season> <http://www.w3.org/2000/01/rdf-schema#domain> <http://visualdataweb.org/newOntology/PerformanceStats> .
+<http://visualdataweb.org/newOntology/Season> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://visualdataweb.org/newOntology/Season> <http://www.w3.org/2000/01/rdf-schema#comment> "The season of the performances of a player" .
+<http://visualdataweb.org/newOntology/Season> <http://www.w3.org/2000/01/rdf-schema#label> "Season"@en .
+<http://visualdataweb.org/newOntology/Season> <http://www.w3.org/2000/01/rdf-schema#label> "Season"@iri-based .
+# 
+# http://visualdataweb.org/newOntology/SeasonYear
+<http://visualdataweb.org/newOntology/SeasonYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://visualdataweb.org/newOntology/SeasonYear> <http://www.w3.org/2000/01/rdf-schema#domain> <http://visualdataweb.org/newOntology/League> .
+<http://visualdataweb.org/newOntology/SeasonYear> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://visualdataweb.org/newOntology/SeasonYear> <http://www.w3.org/2000/01/rdf-schema#comment> "The season of a League" .
+<http://visualdataweb.org/newOntology/SeasonYear> <http://www.w3.org/2000/01/rdf-schema#label> "SeasonYeaR"@en .
+<http://visualdataweb.org/newOntology/SeasonYear> <http://www.w3.org/2000/01/rdf-schema#label> "SeasonYear"@iri-based .
+# 
+# http://visualdataweb.org/newOntology/StadiumName
+<http://visualdataweb.org/newOntology/StadiumName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://visualdataweb.org/newOntology/StadiumName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://visualdataweb.org/newOntology/Stadium> .
+<http://visualdataweb.org/newOntology/StadiumName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://visualdataweb.org/newOntology/StadiumName> <http://www.w3.org/2000/01/rdf-schema#comment> "The name of a stadium" .
+<http://visualdataweb.org/newOntology/StadiumName> <http://www.w3.org/2000/01/rdf-schema#label> "StadiumName"@en .
+<http://visualdataweb.org/newOntology/StadiumName> <http://www.w3.org/2000/01/rdf-schema#label> "StadiumName"@iri-based .
+# 
+# http://visualdataweb.org/newOntology/StadiumRegion
+<http://visualdataweb.org/newOntology/StadiumRegion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://visualdataweb.org/newOntology/StadiumRegion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://visualdataweb.org/newOntology/Stadium> .
+<http://visualdataweb.org/newOntology/StadiumRegion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://visualdataweb.org/newOntology/StadiumRegion> <http://www.w3.org/2000/01/rdf-schema#comment> "The region or country a stadium is located in" .
+<http://visualdataweb.org/newOntology/StadiumRegion> <http://www.w3.org/2000/01/rdf-schema#label> "StadiumRegion"@en .
+<http://visualdataweb.org/newOntology/StadiumRegion> <http://www.w3.org/2000/01/rdf-schema#label> "StadiumRegion"@iri-based .
+# 
+# http://visualdataweb.org/newOntology/TeamFormation
+<http://visualdataweb.org/newOntology/TeamFormation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://visualdataweb.org/newOntology/TeamFormation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://visualdataweb.org/newOntology/Team> .
+<http://visualdataweb.org/newOntology/TeamFormation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://visualdataweb.org/newOntology/TeamFormation> <http://www.w3.org/2000/01/rdf-schema#comment> "The formation of a team" .
+<http://visualdataweb.org/newOntology/TeamFormation> <http://www.w3.org/2000/01/rdf-schema#label> "TeamFormation"@en .
+<http://visualdataweb.org/newOntology/TeamFormation> <http://www.w3.org/2000/01/rdf-schema#label> "TeamFormation"@iri-based .
+# 
+# http://visualdataweb.org/newOntology/TeamLeague
+<http://visualdataweb.org/newOntology/TeamLeague> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://visualdataweb.org/newOntology/TeamLeague> <http://www.w3.org/2000/01/rdf-schema#domain> <http://visualdataweb.org/newOntology/Team> .
+<http://visualdataweb.org/newOntology/TeamLeague> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://visualdataweb.org/newOntology/TeamLeague> <http://www.w3.org/2000/01/rdf-schema#comment> "The league a team is playing in" .
+<http://visualdataweb.org/newOntology/TeamLeague> <http://www.w3.org/2000/01/rdf-schema#label> "TeamLeague"@en .
+<http://visualdataweb.org/newOntology/TeamLeague> <http://www.w3.org/2000/01/rdf-schema#label> "TeamLeague"@iri-based .
+# 
+# http://visualdataweb.org/newOntology/TeamName
+<http://visualdataweb.org/newOntology/TeamName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://visualdataweb.org/newOntology/TeamName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://visualdataweb.org/newOntology/Team> .
+<http://visualdataweb.org/newOntology/TeamName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://visualdataweb.org/newOntology/TeamName> <http://www.w3.org/2000/01/rdf-schema#comment> "The name of a team" .
+<http://visualdataweb.org/newOntology/TeamName> <http://www.w3.org/2000/01/rdf-schema#label> "TeamName"@en .
+<http://visualdataweb.org/newOntology/TeamName> <http://www.w3.org/2000/01/rdf-schema#label> "TeamName"@iri-based .
+# 
+# http://visualdataweb.org/newOntology/TeamRanking
+<http://visualdataweb.org/newOntology/TeamRanking> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://visualdataweb.org/newOntology/TeamRanking> <http://www.w3.org/2000/01/rdf-schema#domain> <http://visualdataweb.org/newOntology/Team> .
+<http://visualdataweb.org/newOntology/TeamRanking> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://visualdataweb.org/newOntology/TeamRanking> <http://www.w3.org/2000/01/rdf-schema#comment> "The league ranking of a team" .
+<http://visualdataweb.org/newOntology/TeamRanking> <http://www.w3.org/2000/01/rdf-schema#label> "TeamRanking"@en .
+<http://visualdataweb.org/newOntology/TeamRanking> <http://www.w3.org/2000/01/rdf-schema#label> "TeamRanking"@iri-based .
+# 
+# http://visualdataweb.org/newOntology/TeamSeason
+<http://visualdataweb.org/newOntology/TeamSeason> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://visualdataweb.org/newOntology/TeamSeason> <http://www.w3.org/2000/01/rdf-schema#domain> <http://visualdataweb.org/newOntology/Team> .
+<http://visualdataweb.org/newOntology/TeamSeason> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://visualdataweb.org/newOntology/TeamSeason> <http://www.w3.org/2000/01/rdf-schema#comment> "The season of a team" .
+<http://visualdataweb.org/newOntology/TeamSeason> <http://www.w3.org/2000/01/rdf-schema#comment> "The season of the team" .
+<http://visualdataweb.org/newOntology/TeamSeason> <http://www.w3.org/2000/01/rdf-schema#label> "TeamSeason"@en .
+<http://visualdataweb.org/newOntology/TeamSeason> <http://www.w3.org/2000/01/rdf-schema#label> "TeamSeason"@iri-based .
+# 
+# http://visualdataweb.org/newOntology/TournamentChampion
+<http://visualdataweb.org/newOntology/TournamentChampion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://visualdataweb.org/newOntology/TournamentChampion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://visualdataweb.org/newOntology/Tournament> .
+<http://visualdataweb.org/newOntology/TournamentChampion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://visualdataweb.org/newOntology/TournamentChampion> <http://www.w3.org/2000/01/rdf-schema#comment> "The champion of a specific tournament" .
+<http://visualdataweb.org/newOntology/TournamentChampion> <http://www.w3.org/2000/01/rdf-schema#label> "TournamentChampion"@en .
+<http://visualdataweb.org/newOntology/TournamentChampion> <http://www.w3.org/2000/01/rdf-schema#label> "TournamentChampion"@iri-based .
+# 
+# http://visualdataweb.org/newOntology/TournamentName
+<http://visualdataweb.org/newOntology/TournamentName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://visualdataweb.org/newOntology/TournamentName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://visualdataweb.org/newOntology/Tournament> .
+<http://visualdataweb.org/newOntology/TournamentName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://visualdataweb.org/newOntology/TournamentName> <http://www.w3.org/2000/01/rdf-schema#comment> "The name of the tournament" .
+<http://visualdataweb.org/newOntology/TournamentName> <http://www.w3.org/2000/01/rdf-schema#label> "TournamentName"@en .
+<http://visualdataweb.org/newOntology/TournamentName> <http://www.w3.org/2000/01/rdf-schema#label> "TournamentName"@iri-based .
+# 
+# http://visualdataweb.org/newOntology/TournamentNumOfTeams
+<http://visualdataweb.org/newOntology/TournamentNumOfTeams> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://visualdataweb.org/newOntology/TournamentNumOfTeams> <http://www.w3.org/2000/01/rdf-schema#domain> <http://visualdataweb.org/newOntology/Tournament> .
+<http://visualdataweb.org/newOntology/TournamentNumOfTeams> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://visualdataweb.org/newOntology/TournamentNumOfTeams> <http://www.w3.org/2000/01/rdf-schema#comment> "The number of teams in a tournament" .
+<http://visualdataweb.org/newOntology/TournamentNumOfTeams> <http://www.w3.org/2000/01/rdf-schema#label> "TournamentNumOfTeams"@en .
+<http://visualdataweb.org/newOntology/TournamentNumOfTeams> <http://www.w3.org/2000/01/rdf-schema#label> "TournamentNumOfTeams"@iri-based .
+# 
+# http://visualdataweb.org/newOntology/TrophyAssociatedLeague
+<http://visualdataweb.org/newOntology/TrophyAssociatedLeague> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://visualdataweb.org/newOntology/TrophyAssociatedLeague> <http://www.w3.org/2000/01/rdf-schema#domain> <http://visualdataweb.org/newOntology/Trophy> .
+<http://visualdataweb.org/newOntology/TrophyAssociatedLeague> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://visualdataweb.org/newOntology/TrophyAssociatedLeague> <http://www.w3.org/2000/01/rdf-schema#comment> "What kind of team trophy, like DFB Pokal or other trophies from other countries" .
+<http://visualdataweb.org/newOntology/TrophyAssociatedLeague> <http://www.w3.org/2000/01/rdf-schema#label> "TrophyAssociatedLeague"@en .
+<http://visualdataweb.org/newOntology/TrophyAssociatedLeague> <http://www.w3.org/2000/01/rdf-schema#label> "TrophyAssociatedLeague"@iri-based .
+# 
+# http://visualdataweb.org/newOntology/TrophyName
+<http://visualdataweb.org/newOntology/TrophyName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://visualdataweb.org/newOntology/TrophyName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://visualdataweb.org/newOntology/Trophy> .
+<http://visualdataweb.org/newOntology/TrophyName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://visualdataweb.org/newOntology/TrophyName> <http://www.w3.org/2000/01/rdf-schema#comment> "The name of a trophy" .
+<http://visualdataweb.org/newOntology/TrophyName> <http://www.w3.org/2000/01/rdf-schema#label> "TrophyName"@en .
+<http://visualdataweb.org/newOntology/TrophyName> <http://www.w3.org/2000/01/rdf-schema#label> "TrophyName"@iri-based .
+# 
+# http://visualdataweb.org/newOntology/TrophyWinner
+<http://visualdataweb.org/newOntology/TrophyWinner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://visualdataweb.org/newOntology/TrophyWinner> <http://www.w3.org/2000/01/rdf-schema#domain> <http://visualdataweb.org/newOntology/Trophy> .
+<http://visualdataweb.org/newOntology/TrophyWinner> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://visualdataweb.org/newOntology/TrophyWinner> <http://www.w3.org/2000/01/rdf-schema#comment> "The winner of a trophy" .
+<http://visualdataweb.org/newOntology/TrophyWinner> <http://www.w3.org/2000/01/rdf-schema#label> "TrophyWinner"@en .
+<http://visualdataweb.org/newOntology/TrophyWinner> <http://www.w3.org/2000/01/rdf-schema#label> "TrophyWinner"@iri-based .
+# 
+# http://visualdataweb.org/newOntology/YellowCards
+<http://visualdataweb.org/newOntology/YellowCards> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://visualdataweb.org/newOntology/YellowCards> <http://www.w3.org/2000/01/rdf-schema#domain> <http://visualdataweb.org/newOntology/PerformanceStats> .
+<http://visualdataweb.org/newOntology/YellowCards> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://visualdataweb.org/newOntology/YellowCards> <http://www.w3.org/2000/01/rdf-schema#comment> "The yellow cards a player has got in a specific season" .
+<http://visualdataweb.org/newOntology/YellowCards> <http://www.w3.org/2000/01/rdf-schema#label> "YellowCards"@en .
+<http://visualdataweb.org/newOntology/YellowCards> <http://www.w3.org/2000/01/rdf-schema#label> "YellowCards"@iri-based .
+# 
+# http://visualdataweb.org/newOntology/height
+<http://visualdataweb.org/newOntology/height> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://visualdataweb.org/newOntology/height> <http://www.w3.org/2000/01/rdf-schema#domain> <http://visualdataweb.org/newOntology/Player> .
+<http://visualdataweb.org/newOntology/height> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://visualdataweb.org/newOntology/height> <http://www.w3.org/2000/01/rdf-schema#comment> "The height of a player" .
+<http://visualdataweb.org/newOntology/height> <http://www.w3.org/2000/01/rdf-schema#label> "height"@en .
+<http://visualdataweb.org/newOntology/height> <http://www.w3.org/2000/01/rdf-schema#label> "height"@iri-based .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://visualdataweb.org/newOntology/Award
+<http://visualdataweb.org/newOntology/Award> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://visualdataweb.org/newOntology/Award> <http://www.w3.org/2000/01/rdf-schema#comment> "An indivual award won by a player" .
+<http://visualdataweb.org/newOntology/Award> <http://www.w3.org/2000/01/rdf-schema#label> "Award"@en .
+<http://visualdataweb.org/newOntology/Award> <http://www.w3.org/2000/01/rdf-schema#label> "Award"@iri-based .
+# 
+# http://visualdataweb.org/newOntology/CenterBack
+<http://visualdataweb.org/newOntology/CenterBack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://visualdataweb.org/newOntology/CenterBack> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://visualdataweb.org/newOntology/Defender> .
+<http://visualdataweb.org/newOntology/CenterBack> <http://www.w3.org/2000/01/rdf-schema#comment> "The centerback position of a player" .
+<http://visualdataweb.org/newOntology/CenterBack> <http://www.w3.org/2000/01/rdf-schema#label> "CenterBack"@iri-based .
+# 
+# http://visualdataweb.org/newOntology/Coach
+<http://visualdataweb.org/newOntology/Coach> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://visualdataweb.org/newOntology/Coach> <http://www.w3.org/2000/01/rdf-schema#comment> "The coach managing a team" .
+<http://visualdataweb.org/newOntology/Coach> <http://www.w3.org/2000/01/rdf-schema#label> "Coach"@en .
+<http://visualdataweb.org/newOntology/Coach> <http://www.w3.org/2000/01/rdf-schema#label> "Coach"@iri-based .
+# 
+# http://visualdataweb.org/newOntology/Defender
+<http://visualdataweb.org/newOntology/Defender> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://visualdataweb.org/newOntology/Defender> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://visualdataweb.org/newOntology/Position> .
+<http://visualdataweb.org/newOntology/Defender> <http://www.w3.org/2000/01/rdf-schema#comment> "A generic subclass for defenders in football" .
+<http://visualdataweb.org/newOntology/Defender> <http://www.w3.org/2000/01/rdf-schema#label> "Defender"@en .
+<http://visualdataweb.org/newOntology/Defender> <http://www.w3.org/2000/01/rdf-schema#label> "Defender"@iri-based .
+# 
+# http://visualdataweb.org/newOntology/DefensiveMidfielder
+<http://visualdataweb.org/newOntology/DefensiveMidfielder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://visualdataweb.org/newOntology/DefensiveMidfielder> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://visualdataweb.org/newOntology/Midfielder> .
+<http://visualdataweb.org/newOntology/DefensiveMidfielder> <http://www.w3.org/2000/01/rdf-schema#comment> "The defensive midfielder position of a player" .
+<http://visualdataweb.org/newOntology/DefensiveMidfielder> <http://www.w3.org/2000/01/rdf-schema#label> "DefensiveMidfielder"@iri-based .
+# 
+# http://visualdataweb.org/newOntology/Forward
+<http://visualdataweb.org/newOntology/Forward> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://visualdataweb.org/newOntology/Forward> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://visualdataweb.org/newOntology/Position> .
+<http://visualdataweb.org/newOntology/Forward> <http://www.w3.org/2000/01/rdf-schema#comment> "A generic class for the position Forward including subclasses" .
+<http://visualdataweb.org/newOntology/Forward> <http://www.w3.org/2000/01/rdf-schema#label> "Forward"@en .
+<http://visualdataweb.org/newOntology/Forward> <http://www.w3.org/2000/01/rdf-schema#label> "Forward"@iri-based .
+# 
+# http://visualdataweb.org/newOntology/Goalkeeper
+<http://visualdataweb.org/newOntology/Goalkeeper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://visualdataweb.org/newOntology/Goalkeeper> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://visualdataweb.org/newOntology/Position> .
+<http://visualdataweb.org/newOntology/Goalkeeper> <http://www.w3.org/2000/01/rdf-schema#comment> "The goalkeeper of a player" .
+<http://visualdataweb.org/newOntology/Goalkeeper> <http://www.w3.org/2000/01/rdf-schema#label> "Goalkeeper"@en .
+<http://visualdataweb.org/newOntology/Goalkeeper> <http://www.w3.org/2000/01/rdf-schema#label> "Goalkeeper"@iri-based .
+# 
+# http://visualdataweb.org/newOntology/KnockOutTournament
+<http://visualdataweb.org/newOntology/KnockOutTournament> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://visualdataweb.org/newOntology/KnockOutTournament> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://visualdataweb.org/newOntology/Tournament> .
+<http://visualdataweb.org/newOntology/KnockOutTournament> <http://www.w3.org/2002/07/owl#disjointWith> <http://visualdataweb.org/newOntology/League> .
+<http://visualdataweb.org/newOntology/KnockOutTournament> <http://www.w3.org/2000/01/rdf-schema#comment> "A knock-out pyramid style of a tournament, where a team has to compete in a KO-Stage like quarter final, semi final and final" .
+<http://visualdataweb.org/newOntology/KnockOutTournament> <http://www.w3.org/2000/01/rdf-schema#label> "KnockOutTournament"@iri-based .
+# 
+# http://visualdataweb.org/newOntology/League
+<http://visualdataweb.org/newOntology/League> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://visualdataweb.org/newOntology/League> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://visualdataweb.org/newOntology/Tournament> .
+<http://visualdataweb.org/newOntology/League> <http://www.w3.org/2000/01/rdf-schema#comment> "A league type of tournament, where a team competes with many other teams of a specific league, winning 3, 1, or 0 points each game. At the end of the season, the team that has the most points wins the league" .
+<http://visualdataweb.org/newOntology/League> <http://www.w3.org/2000/01/rdf-schema#label> "League"@en .
+<http://visualdataweb.org/newOntology/League> <http://www.w3.org/2000/01/rdf-schema#label> "League"@iri-based .
+# 
+# http://visualdataweb.org/newOntology/LeftBack
+<http://visualdataweb.org/newOntology/LeftBack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://visualdataweb.org/newOntology/LeftBack> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://visualdataweb.org/newOntology/Defender> .
+<http://visualdataweb.org/newOntology/LeftBack> <http://www.w3.org/2000/01/rdf-schema#comment> "A left back position of a player" .
+<http://visualdataweb.org/newOntology/LeftBack> <http://www.w3.org/2000/01/rdf-schema#label> "LeftBack"@iri-based .
+# 
+# http://visualdataweb.org/newOntology/LeftMidfield
+<http://visualdataweb.org/newOntology/LeftMidfield> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://visualdataweb.org/newOntology/LeftMidfield> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://visualdataweb.org/newOntology/Midfielder> .
+<http://visualdataweb.org/newOntology/LeftMidfield> <http://www.w3.org/2000/01/rdf-schema#comment> "The left midfield position of a player" .
+<http://visualdataweb.org/newOntology/LeftMidfield> <http://www.w3.org/2000/01/rdf-schema#label> "LeftMidfield"@iri-based .
+# 
+# http://visualdataweb.org/newOntology/LeftWing
+<http://visualdataweb.org/newOntology/LeftWing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://visualdataweb.org/newOntology/LeftWing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://visualdataweb.org/newOntology/Forward> .
+<http://visualdataweb.org/newOntology/LeftWing> <http://www.w3.org/2000/01/rdf-schema#comment> "The left wing position of a player" .
+<http://visualdataweb.org/newOntology/LeftWing> <http://www.w3.org/2000/01/rdf-schema#label> "LeftWing"@iri-based .
+# 
+# http://visualdataweb.org/newOntology/Match
+<http://visualdataweb.org/newOntology/Match> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://visualdataweb.org/newOntology/Match> <http://www.w3.org/2000/01/rdf-schema#comment> "A competetive football event held between two teams" .
+<http://visualdataweb.org/newOntology/Match> <http://www.w3.org/2000/01/rdf-schema#label> "Match"@en .
+<http://visualdataweb.org/newOntology/Match> <http://www.w3.org/2000/01/rdf-schema#label> "Match"@iri-based .
+# 
+# http://visualdataweb.org/newOntology/Midfielder
+<http://visualdataweb.org/newOntology/Midfielder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://visualdataweb.org/newOntology/Midfielder> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://visualdataweb.org/newOntology/Position> .
+<http://visualdataweb.org/newOntology/Midfielder> <http://www.w3.org/2000/01/rdf-schema#comment> "The generic class of a midfielder, including subclasses" .
+<http://visualdataweb.org/newOntology/Midfielder> <http://www.w3.org/2000/01/rdf-schema#label> "Midfielder"@en .
+<http://visualdataweb.org/newOntology/Midfielder> <http://www.w3.org/2000/01/rdf-schema#label> "Midfielder"@iri-based .
+# 
+# http://visualdataweb.org/newOntology/OffensiveMidfielder
+<http://visualdataweb.org/newOntology/OffensiveMidfielder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://visualdataweb.org/newOntology/OffensiveMidfielder> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://visualdataweb.org/newOntology/Midfielder> .
+<http://visualdataweb.org/newOntology/OffensiveMidfielder> <http://www.w3.org/2000/01/rdf-schema#comment> "The offensive midfielder position of a player" .
+<http://visualdataweb.org/newOntology/OffensiveMidfielder> <http://www.w3.org/2000/01/rdf-schema#label> "OffensiveMidfielder"@iri-based .
+# 
+# http://visualdataweb.org/newOntology/PerformanceStats
+<http://visualdataweb.org/newOntology/PerformanceStats> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://visualdataweb.org/newOntology/PerformanceStats> <http://www.w3.org/2000/01/rdf-schema#comment> "The perfomance statistics of a player like goal scored, assists and so on." .
+<http://visualdataweb.org/newOntology/PerformanceStats> <http://www.w3.org/2000/01/rdf-schema#label> "PerformanceStats"@en .
+<http://visualdataweb.org/newOntology/PerformanceStats> <http://www.w3.org/2000/01/rdf-schema#label> "PerformanceStats"@iri-based .
+# 
+# http://visualdataweb.org/newOntology/Player
+<http://visualdataweb.org/newOntology/Player> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://visualdataweb.org/newOntology/Player> <http://www.w3.org/2000/01/rdf-schema#comment> "A professional football player" .
+<http://visualdataweb.org/newOntology/Player> <http://www.w3.org/2000/01/rdf-schema#label> "Player"@en .
+<http://visualdataweb.org/newOntology/Player> <http://www.w3.org/2000/01/rdf-schema#label> "Player"@iri-based .
+# 
+# http://visualdataweb.org/newOntology/Position
+<http://visualdataweb.org/newOntology/Position> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://visualdataweb.org/newOntology/Position> <http://www.w3.org/2000/01/rdf-schema#comment> "This class shows the parent class \"Position\" which includes subclasses of positions of a player" .
+<http://visualdataweb.org/newOntology/Position> <http://www.w3.org/2000/01/rdf-schema#label> "Position"@en .
+# 
+# http://visualdataweb.org/newOntology/Referee
+<http://visualdataweb.org/newOntology/Referee> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://visualdataweb.org/newOntology/Referee> <http://www.w3.org/2000/01/rdf-schema#comment> "The referee officiating a football match" .
+<http://visualdataweb.org/newOntology/Referee> <http://www.w3.org/2000/01/rdf-schema#label> "Referee"@en .
+<http://visualdataweb.org/newOntology/Referee> <http://www.w3.org/2000/01/rdf-schema#label> "Referee"@iri-based .
+# 
+# http://visualdataweb.org/newOntology/RightBack
+<http://visualdataweb.org/newOntology/RightBack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://visualdataweb.org/newOntology/RightBack> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://visualdataweb.org/newOntology/Defender> .
+<http://visualdataweb.org/newOntology/RightBack> <http://www.w3.org/2000/01/rdf-schema#comment> "A right back position of a player" .
+<http://visualdataweb.org/newOntology/RightBack> <http://www.w3.org/2000/01/rdf-schema#label> "RightBack"@iri-based .
+# 
+# http://visualdataweb.org/newOntology/RightMidfield
+<http://visualdataweb.org/newOntology/RightMidfield> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://visualdataweb.org/newOntology/RightMidfield> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://visualdataweb.org/newOntology/Midfielder> .
+<http://visualdataweb.org/newOntology/RightMidfield> <http://www.w3.org/2000/01/rdf-schema#comment> "The right midfield position of a player" .
+<http://visualdataweb.org/newOntology/RightMidfield> <http://www.w3.org/2000/01/rdf-schema#label> "RightMidfield"@iri-based .
+# 
+# http://visualdataweb.org/newOntology/RightWing
+<http://visualdataweb.org/newOntology/RightWing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://visualdataweb.org/newOntology/RightWing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://visualdataweb.org/newOntology/Forward> .
+<http://visualdataweb.org/newOntology/RightWing> <http://www.w3.org/2000/01/rdf-schema#comment> "The right wing position of a player" .
+<http://visualdataweb.org/newOntology/RightWing> <http://www.w3.org/2000/01/rdf-schema#label> "RightWing"@iri-based .
+# 
+# http://visualdataweb.org/newOntology/Stadium
+<http://visualdataweb.org/newOntology/Stadium> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://visualdataweb.org/newOntology/Stadium> <http://www.w3.org/2000/01/rdf-schema#comment> "The stadium of a football team" .
+<http://visualdataweb.org/newOntology/Stadium> <http://www.w3.org/2000/01/rdf-schema#label> "Stadium"@en .
+<http://visualdataweb.org/newOntology/Stadium> <http://www.w3.org/2000/01/rdf-schema#label> "Stadium"@iri-based .
+# 
+# http://visualdataweb.org/newOntology/Striker
+<http://visualdataweb.org/newOntology/Striker> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://visualdataweb.org/newOntology/Striker> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://visualdataweb.org/newOntology/Forward> .
+<http://visualdataweb.org/newOntology/Striker> <http://www.w3.org/2000/01/rdf-schema#comment> "The main striker position of a player" .
+<http://visualdataweb.org/newOntology/Striker> <http://www.w3.org/2000/01/rdf-schema#label> "Striker"@iri-based .
+# 
+# http://visualdataweb.org/newOntology/Team
+<http://visualdataweb.org/newOntology/Team> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://visualdataweb.org/newOntology/Team> <http://www.w3.org/2000/01/rdf-schema#comment> "A professional football team" .
+<http://visualdataweb.org/newOntology/Team> <http://www.w3.org/2000/01/rdf-schema#label> "Team"@en .
+<http://visualdataweb.org/newOntology/Team> <http://www.w3.org/2000/01/rdf-schema#label> "Team"@iri-based .
+# 
+# http://visualdataweb.org/newOntology/Tournament
+<http://visualdataweb.org/newOntology/Tournament> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://visualdataweb.org/newOntology/Tournament> <http://www.w3.org/2000/01/rdf-schema#comment> "The tournament a team is currently competing in" .
+<http://visualdataweb.org/newOntology/Tournament> <http://www.w3.org/2000/01/rdf-schema#label> "Tournament"@en .
+<http://visualdataweb.org/newOntology/Tournament> <http://www.w3.org/2000/01/rdf-schema#label> "Tournament"@iri-based .
+# 
+# http://visualdataweb.org/newOntology/Trophy
+<http://visualdataweb.org/newOntology/Trophy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://visualdataweb.org/newOntology/Trophy> <http://www.w3.org/2000/01/rdf-schema#comment> "A trophy won by a team" .
+<http://visualdataweb.org/newOntology/Trophy> <http://www.w3.org/2000/01/rdf-schema#label> "Trophy"@en .
+<http://visualdataweb.org/newOntology/Trophy> <http://www.w3.org/2000/01/rdf-schema#label> "Trophy"@iri-based .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
