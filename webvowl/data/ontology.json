@@ -1,2293 +1,3148 @@
 {
-  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
-  "header" : {
-    "languages" : [ "iri-based", "en", "undefined" ],
-    "baseIris" : [ "http://visualdataweb.org/newOntology", "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema" ],
-    "title" : {
-      "en" : "Footology"
+  "_comment": "Created with OWL2VOWL (version 0.3.7), http://vowl.visualdataweb.org [Additional Information added by WebVOWL Exporter Version: 1.1.7]",
+  "header": {
+    "languages": [
+      "undefined",
+      "en",
+      "iri-based"
+    ],
+    "baseIris": [
+      "http://visualdataweb.org/newOntology",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns",
+      "http://www.w3.org/2000/01/rdf-schema",
+      "http://www.w3.org/2001/XMLSchema"
+    ],
+    "prefixList": {
+      "owl": "http://www.w3.org/2002/07/owl#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "wot": "http://xmlns.com/wot/0.1/",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "": "http://visualdataweb.org/newOntology/",
+      "dc": "http://purl.org/dc/elements/1.1/#",
+      "xml": "http://www.w3.org/XML/1998/namespace",
+      "vs": "http://www.w3.org/2003/06/sw-vocab-status/ns#",
+      "foaf": "http://xmlns.com/foaf/0.1/",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
     },
-    "iri" : "http://visualdataweb.org/newOntology/",
-    "description" : {
-      "en" : "An ontology about the football domain"
+    "title": {
+      "en": "Footology"
     },
-    "other" : {
-      "license" : [ {
-        "identifier" : "license",
-        "language" : "undefined",
-        "value" : "https://creativecommons.org/licenses/by/4.0/",
-        "type" : "label"
-      } ],
-      "title" : [ {
-        "identifier" : "title",
-        "language" : "en",
-        "value" : "Footology",
-        "type" : "label"
-      } ]
+    "iri": "http://visualdataweb.org/newOntology/",
+    "description": {
+      "en": "An ontology about the football domain"
+    },
+    "other": {
+      "license": [
+        {
+          "identifier": "license",
+          "language": "undefined",
+          "value": "https://creativecommons.org/licenses/by/4.0/",
+          "type": "label"
+        }
+      ],
+      "title": [
+        {
+          "identifier": "title",
+          "language": "en",
+          "value": "Footology",
+          "type": "label"
+        }
+      ]
     }
   },
-  "namespace" : [ ],
-  "class" : [ {
-    "id" : "0",
-    "type" : "owl:Class"
-  }, {
-    "id" : "5",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "20",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "21",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "28",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "17",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "34",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "30",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "37",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "38",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "39",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "40",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "32",
-    "type" : "owl:Class"
-  }, {
-    "id" : "1",
-    "type" : "owl:Class"
-  }, {
-    "id" : "44",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "52",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "53",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "55",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "56",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "57",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "58",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "63",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "46",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "64",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "50",
-    "type" : "owl:Class"
-  }, {
-    "id" : "13",
-    "type" : "owl:Class"
-  }, {
-    "id" : "85",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "62",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "92",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "81",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "70",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "76",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "95",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "47",
-    "type" : "owl:Class"
-  }, {
-    "id" : "101",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "102",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "103",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "91",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "84",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "94",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "33",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "105",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "106",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "100",
-    "type" : "owl:Class"
-  }, {
-    "id" : "23",
-    "type" : "owl:Class"
-  }, {
-    "id" : "2",
-    "type" : "owl:Class"
-  }, {
-    "id" : "19",
-    "type" : "owl:Class"
-  }, {
-    "id" : "49",
-    "type" : "owl:Class"
-  }, {
-    "id" : "10",
-    "type" : "owl:Class"
-  }, {
-    "id" : "42",
-    "type" : "owl:Class"
-  }, {
-    "id" : "111",
-    "type" : "owl:Class"
-  }, {
-    "id" : "51",
-    "type" : "owl:Class"
-  }, {
-    "id" : "3",
-    "type" : "owl:Class"
-  }, {
-    "id" : "137",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "8",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "138",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "110",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "36",
-    "type" : "owl:Class"
-  }, {
-    "id" : "67",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "126",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "136",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "14",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "112",
-    "type" : "owl:Class"
-  }, {
-    "id" : "11",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "114",
-    "type" : "owl:Class"
-  }, {
-    "id" : "72",
-    "type" : "owl:Class"
-  }, {
-    "id" : "7",
-    "type" : "owl:Class"
-  }, {
-    "id" : "74",
-    "type" : "owl:Class"
-  }, {
-    "id" : "73",
-    "type" : "owl:Class"
-  }, {
-    "id" : "16",
-    "type" : "owl:Class"
-  }, {
-    "id" : "26",
-    "type" : "owl:Class"
-  }, {
-    "id" : "113",
-    "type" : "owl:Class"
-  }, {
-    "id" : "4",
-    "type" : "owl:Class"
-  } ],
-  "classAttribute" : [ {
-    "iri" : "http://visualdataweb.org/newOntology/Forward",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Forward",
-      "iri-based" : "Forward",
-      "en" : "Forward"
+  "namespace": [],
+  "settings": {
+    "global": {
+      "zoom": "0.36",
+      "translation": [
+        399.04,
+        292.28
+      ],
+      "paused": false
     },
-    "subClasses" : [ "2", "3", "4" ],
-    "comment" : {
-      "undefined" : "A generic class for the position Forward including subclasses"
+    "gravity": {
+      "classDistance": 220,
+      "datatypeDistance": 120
     },
-    "id" : "0",
-    "superClasses" : [ "1" ]
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "5",
-    "label" : {
-      "IRI-based" : "string"
+    "filter": {
+      "checkBox": [
+        {
+          "id": "datatypeFilterCheckbox",
+          "checked": false
+        },
+        {
+          "id": "objectPropertyFilterCheckbox",
+          "checked": false
+        },
+        {
+          "id": "subclassFilterCheckbox",
+          "checked": false
+        },
+        {
+          "id": "disjointFilterCheckbox",
+          "checked": true
+        },
+        {
+          "id": "setoperatorFilterCheckbox",
+          "checked": false
+        }
+      ],
+      "degreeSliderValue": "0"
+    },
+    "modes": {
+      "checkBox": [
+        {
+          "id": "pickandpinModuleCheckbox",
+          "checked": false
+        },
+        {
+          "id": "nodescalingModuleCheckbox",
+          "checked": true
+        },
+        {
+          "id": "compactnotationModuleCheckbox",
+          "checked": false
+        },
+        {
+          "id": "colorexternalsModuleCheckbox",
+          "checked": true
+        }
+      ],
+      "colorSwitchState": false
     }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "20",
-    "label" : {
-      "IRI-based" : "string"
+  },
+  "class": [
+    {
+      "id": "0",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "14",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "15",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "22",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "25",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "29",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "32",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "33",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "34",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "35",
+      "type": "rdfs:Literal"
+    },
+    {
+      "id": "36",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "27",
+      "type": "owl:Class"
+    },
+    {
+      "id": "47",
+      "type": "owl:Class"
+    },
+    {
+      "id": "48",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "49",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "50",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "52",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "53",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "11",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "54",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "58",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "59",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "44",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "8",
+      "type": "owl:Class"
+    },
+    {
+      "id": "75",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "77",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "28",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "81",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "68",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "84",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "85",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "45",
+      "type": "owl:Class"
+    },
+    {
+      "id": "6",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "3",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "83",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "70",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "93",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "94",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "62",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "24",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "64",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "72",
+      "type": "owl:Class"
+    },
+    {
+      "id": "17",
+      "type": "owl:Class"
+    },
+    {
+      "id": "13",
+      "type": "owl:Class"
+    },
+    {
+      "id": "5",
+      "type": "owl:Class"
+    },
+    {
+      "id": "38",
+      "type": "owl:Class"
+    },
+    {
+      "id": "91",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "74",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "104",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "106",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "31",
+      "type": "owl:Class"
+    },
+    {
+      "id": "100",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "112",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "40",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "88",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "108",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "2",
+      "type": "owl:Class"
+    },
+    {
+      "id": "10",
+      "type": "owl:Class"
+    },
+    {
+      "id": "20",
+      "type": "owl:Class"
     }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "21",
-    "label" : {
-      "IRI-based" : "string"
+  ],
+  "classAttribute": [
+    {
+      "id": "0",
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "string"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        998.09,
+        1253.42
+      ]
+    },
+    {
+      "id": "14",
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "string"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        1239.56,
+        -127.22
+      ]
+    },
+    {
+      "id": "15",
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "string"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        917.63,
+        400.34
+      ]
+    },
+    {
+      "id": "22",
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "string"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        -329.32,
+        -183.36
+      ]
+    },
+    {
+      "id": "25",
+      "iri": "http://www.w3.org/2001/XMLSchema#integer",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "integer"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        133.61,
+        1054.37
+      ]
+    },
+    {
+      "id": "29",
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "string"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        36.55,
+        667.54
+      ]
+    },
+    {
+      "id": "32",
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "string"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        216.78,
+        -734.25
+      ]
+    },
+    {
+      "id": "33",
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "string"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        282.21,
+        1201.76
+      ]
+    },
+    {
+      "id": "34",
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "string"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        -71.79,
+        523.49
+      ]
+    },
+    {
+      "id": "35",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema",
+      "label": "Literal",
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        766.03,
+        1279.49
+      ]
+    },
+    {
+      "id": "36",
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "string"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        880.62,
+        1300.33
+      ]
+    },
+    {
+      "id": "27",
+      "iri": "http://visualdataweb.org/newOntology/League",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "League",
+        "en": "league",
+        "undefined": "league"
+      },
+      "comment": {
+        "undefined": "A league type of tournament, where a team competes with many other teams of a specific league, winning 3, 1, or 0 points each game. At the end of the season, the team that has the most points wins the league"
+      },
+      "pos": [
+        1530.94,
+        789.85
+      ]
+    },
+    {
+      "id": "47",
+      "iri": "http://visualdataweb.org/newOntology/Position",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "Position",
+        "en": "position"
+      },
+      "comment": {
+        "undefined": "This class shows the parent class \"Position\" which includes subclasses of positions of a player"
+      },
+      "pos": [
+        274.71,
+        -484.76
+      ]
+    },
+    {
+      "id": "48",
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "string"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        615.74,
+        -760.55
+      ]
+    },
+    {
+      "id": "49",
+      "iri": "http://www.w3.org/2001/XMLSchema#integer",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "integer"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        152.62,
+        691.64
+      ]
+    },
+    {
+      "id": "50",
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "string"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        372.05,
+        -313.19
+      ]
+    },
+    {
+      "id": "52",
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "string"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        193.41,
+        1151.19
+      ]
+    },
+    {
+      "id": "53",
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "string"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        1175.94,
+        -228.23
+      ]
+    },
+    {
+      "id": "11",
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "string"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        -426.39,
+        941.36
+      ]
+    },
+    {
+      "id": "54",
+      "iri": "http://www.w3.org/2001/XMLSchema#integer",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "integer"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        -303,
+        114.24
+      ]
+    },
+    {
+      "id": "58",
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "string"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        1464.33,
+        1037.34
+      ]
+    },
+    {
+      "id": "59",
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "string"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        607.5,
+        -134.1
+      ]
+    },
+    {
+      "id": "44",
+      "iri": "http://www.w3.org/2001/XMLSchema#integer",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "integer"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        -354.74,
+        -81.39
+      ]
+    },
+    {
+      "id": "8",
+      "iri": "http://visualdataweb.org/newOntology/Coach",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "Coach",
+        "en": "coach",
+        "undefined": "coach"
+      },
+      "comment": {
+        "undefined": "The coach managing a team"
+      },
+      "pos": [
+        849.74,
+        1019.39
+      ]
+    },
+    {
+      "id": "75",
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "string"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        905.34,
+        604.29
+      ]
+    },
+    {
+      "id": "77",
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "string"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        690.97,
+        214.42
+      ]
+    },
+    {
+      "id": "28",
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "string"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        1741.23,
+        930.33
+      ]
+    },
+    {
+      "id": "81",
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "string"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        1496.43,
+        437.63
+      ]
+    },
+    {
+      "id": "68",
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "string"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        -40.47,
+        318.07
+      ]
+    },
+    {
+      "id": "84",
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "string"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        -464.27,
+        785.88
+      ]
+    },
+    {
+      "id": "85",
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "string"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        -88.68,
+        423.67
+      ]
+    },
+    {
+      "id": "45",
+      "iri": "http://visualdataweb.org/newOntology/Tournament",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "Tournament",
+        "en": "tournament",
+        "undefined": "tournament"
+      },
+      "comment": {
+        "undefined": "The tournament a team is currently competing in"
+      },
+      "pos": [
+        1249.56,
+        425.47
+      ]
+    },
+    {
+      "id": "6",
+      "iri": "http://www.w3.org/2001/XMLSchema#integer",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "integer"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        -344.55,
+        19.73
+      ]
+    },
+    {
+      "id": "3",
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "string"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        770.06,
+        -682.94
+      ]
+    },
+    {
+      "id": "83",
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "string"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        489.85,
+        1154.37
+      ]
+    },
+    {
+      "id": "70",
+      "iri": "http://www.w3.org/2001/XMLSchema#integer",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "integer"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        -164.26,
+        -318.87
+      ]
+    },
+    {
+      "id": "93",
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "string"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        1069.91,
+        1140.47
+      ]
+    },
+    {
+      "id": "94",
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "string"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        883.9,
+        296.19
+      ]
+    },
+    {
+      "id": "62",
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "string"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        1061.69,
+        -272.4
+      ]
+    },
+    {
+      "id": "24",
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "string"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        -305.11,
+        1038.98
+      ]
+    },
+    {
+      "id": "64",
+      "iri": "http://www.w3.org/2001/XMLSchema#integer",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "integer"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        1490.53,
+        313.67
+      ]
+    },
+    {
+      "id": "72",
+      "iri": "http://visualdataweb.org/newOntology/KnockOutTournament",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "KnockOutTournament",
+        "undefined": "knockOutTournament"
+      },
+      "comment": {
+        "undefined": "A knock-out pyramid style of a tournament, where a team has to compete in a KO-Stage like quarter final, semi final and final"
+      },
+      "pos": [
+        1553.79,
+        144.28
+      ]
+    },
+    {
+      "id": "17",
+      "iri": "http://visualdataweb.org/newOntology/Team",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "Team",
+        "en": "team",
+        "undefined": "team"
+      },
+      "comment": {
+        "undefined": "A professional football team"
+      },
+      "pos": [
+        687.97,
+        463.92
+      ]
+    },
+    {
+      "id": "13",
+      "iri": "http://visualdataweb.org/newOntology/Match",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "Match",
+        "en": "match",
+        "undefined": "match"
+      },
+      "comment": {
+        "undefined": "A competetive football event held between two teams"
+      },
+      "pos": [
+        178.47,
+        436.87
+      ]
+    },
+    {
+      "id": "5",
+      "iri": "http://visualdataweb.org/newOntology/PerformanceStats",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "PerformanceStats",
+        "en": "performanceStats",
+        "undefined": "performanceStats"
+      },
+      "comment": {
+        "undefined": "The perfomance statistics of a player like goal scored, assists and so on."
+      },
+      "pos": [
+        -81.37,
+        -45.96
+      ]
+    },
+    {
+      "id": "38",
+      "iri": "http://visualdataweb.org/newOntology/Player",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "Player",
+        "en": "player",
+        "undefined": "player"
+      },
+      "comment": {
+        "undefined": "A professional football player"
+      },
+      "pos": [
+        382.97,
+        -41.8
+      ]
+    },
+    {
+      "id": "91",
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "string"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        -42.59,
+        -314.61
+      ]
+    },
+    {
+      "id": "74",
+      "iri": "http://www.w3.org/2001/XMLSchema#integer",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "integer"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        810.38,
+        682.7
+      ]
+    },
+    {
+      "id": "104",
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "string"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        1612.03,
+        1039.63
+      ]
+    },
+    {
+      "id": "106",
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "string"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        1359.06,
+        180.27
+      ]
+    },
+    {
+      "id": "31",
+      "iri": "http://visualdataweb.org/newOntology/Trophy",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "Trophy",
+        "en": "trophy",
+        "undefined": "trophy"
+      },
+      "comment": {
+        "undefined": "A trophy won by a team"
+      },
+      "pos": [
+        1006.43,
+        -3.47
+      ]
+    },
+    {
+      "id": "100",
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "string"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        1776.54,
+        764.67
+      ]
+    },
+    {
+      "id": "112",
+      "iri": "http://www.w3.org/2001/XMLSchema#integer",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "integer"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        386.66,
+        1208.11
+      ]
+    },
+    {
+      "id": "40",
+      "iri": "http://www.w3.org/2001/XMLSchema#integer",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "integer"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        1730.57,
+        628.57
+      ]
+    },
+    {
+      "id": "88",
+      "iri": "http://www.w3.org/2001/XMLSchema#integer",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "integer"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        564.05,
+        -244.68
+      ]
+    },
+    {
+      "id": "108",
+      "iri": "http://www.w3.org/2001/XMLSchema#integer",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "integer"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        -264.83,
+        -267.99
+      ]
+    },
+    {
+      "id": "2",
+      "iri": "http://visualdataweb.org/newOntology/Award",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "Award",
+        "en": "award",
+        "undefined": "award"
+      },
+      "comment": {
+        "undefined": "An indivual award won by a player"
+      },
+      "pos": [
+        585.17,
+        -501.78
+      ]
+    },
+    {
+      "id": "10",
+      "iri": "http://visualdataweb.org/newOntology/Referee",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "Referee",
+        "en": "referee",
+        "undefined": "referee"
+      },
+      "comment": {
+        "undefined": "The referee officiating a football match"
+      },
+      "pos": [
+        -213.3,
+        788.49
+      ]
+    },
+    {
+      "id": "20",
+      "iri": "http://visualdataweb.org/newOntology/Stadium",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "Stadium",
+        "en": "stadium",
+        "undefined": "stadium"
+      },
+      "comment": {
+        "undefined": "The stadium of a football team"
+      },
+      "pos": [
+        362.13,
+        916.66
+      ]
     }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "28",
-    "label" : {
-      "IRI-based" : "string"
+  ],
+  "property": [
+    {
+      "id": "1",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "4",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "7",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "9",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "12",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "16",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "19",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "23",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "26",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "30",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "37",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "39",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "41",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "43",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "46",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "21",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "51",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "55",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "57",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "60",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "61",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "63",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "65",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "67",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "69",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "71",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "73",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "76",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "78",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "80",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "56",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "82",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "42",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "86",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "87",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "89",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "90",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "92",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "95",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "96",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "97",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "98",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "99",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "18",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "101",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "102",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "79",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "103",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "105",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "107",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "109",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "110",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "111",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "113",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "114",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "115",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "116",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "117",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "118",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "66",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "119",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "121",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "122",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "120",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "123",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "124",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "125",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "126",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "127",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "128",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "129",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "130",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "131",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "132",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "133",
+      "type": "owl:ObjectProperty"
     }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "17",
-    "label" : {
-      "IRI-based" : "string"
+  ],
+  "propertyAttribute": [
+    {
+      "id": "1",
+      "iri": "http://visualdataweb.org/newOntology/AwardSeason",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "AwardSeason",
+        "en": "awardSeason",
+        "undefined": "awardSeason"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "undefined": "The season of an award"
+      },
+      "domain": "2",
+      "range": "3",
+      "pos": [
+        690.37,
+        -604.86
+      ]
+    },
+    {
+      "id": "4",
+      "iri": "http://visualdataweb.org/newOntology/Assists",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "Assists",
+        "en": "assists",
+        "undefined": "assists"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "undefined": "The assists of a specific player within a season"
+      },
+      "domain": "5",
+      "range": "6",
+      "pos": [
+        -222.97,
+        -10.62
+      ]
+    },
+    {
+      "id": "7",
+      "iri": "http://visualdataweb.org/newOntology/CoachNationality",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "CoachNationality",
+        "en": "coachNationality",
+        "undefined": "coachNationality"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "undefined": "The nationality of a coach"
+      },
+      "domain": "8",
+      "range": "0",
+      "pos": [
+        934.13,
+        1152.52
+      ]
+    },
+    {
+      "id": "9",
+      "iri": "http://visualdataweb.org/newOntology/RBirthdate",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "RBirthdate",
+        "en": "rBirthdate",
+        "undefined": "rBirthdate"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "undefined": "The birthday of a referee"
+      },
+      "domain": "10",
+      "range": "11",
+      "pos": [
+        -333.19,
+        874.5
+      ]
+    },
+    {
+      "id": "12",
+      "iri": "http://visualdataweb.org/newOntology/officiates",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "officiates",
+        "iri-based": "officiates",
+        "en": "officiates"
+      },
+      "attributes": [
+        "asymmetric",
+        "object",
+        "functional"
+      ],
+      "comment": {
+        "undefined": "The referee that officiates a specific match"
+      },
+      "domain": "10",
+      "range": "13",
+      "inverse": "124",
+      "pos": [
+        -17.42,
+        612.68
+      ]
+    },
+    {
+      "id": "16",
+      "iri": "http://visualdataweb.org/newOntology/competesIn",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "competesIn",
+        "iri-based": "competesIn",
+        "en": "competesIn"
+      },
+      "attributes": [
+        "object"
+      ],
+      "comment": {
+        "undefined": "This represents a relationship between a team and a match"
+      },
+      "domain": "17",
+      "range": "13",
+      "inverse": "18",
+      "pos": [
+        433.22,
+        450.39
+      ]
+    },
+    {
+      "id": "19",
+      "iri": "http://visualdataweb.org/newOntology/hostedBy",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "hostedBy",
+        "iri-based": "hostedBy",
+        "en": "hostedBy"
+      },
+      "attributes": [
+        "object",
+        "functional"
+      ],
+      "comment": {
+        "undefined": "The stadium of a specific team of a match"
+      },
+      "domain": "13",
+      "range": "20",
+      "inverse": "21",
+      "pos": [
+        270.3,
+        676.76
+      ]
+    },
+    {
+      "id": "23",
+      "iri": "http://visualdataweb.org/newOntology/RefereeName",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "RefereeName",
+        "en": "refereeName",
+        "undefined": "refereeName"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "undefined": "The name of the referee"
+      },
+      "domain": "10",
+      "range": "24",
+      "pos": [
+        -265.98,
+        932.21
+      ]
+    },
+    {
+      "id": "26",
+      "iri": "http://visualdataweb.org/newOntology/SeasonYear",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "SeasonYear",
+        "en": "seasonYear",
+        "undefined": "seasonYear"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "undefined": "The season of a League"
+      },
+      "domain": "27",
+      "range": "28",
+      "pos": [
+        1649.39,
+        868.98
+      ]
+    },
+    {
+      "id": "30",
+      "iri": "http://visualdataweb.org/newOntology/wins",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "wins",
+        "iri-based": "wins",
+        "en": "wins"
+      },
+      "attributes": [
+        "object"
+      ],
+      "comment": {
+        "undefined": "A team that wins a trophy"
+      },
+      "domain": "17",
+      "range": "31",
+      "inverse": "46",
+      "pos": [
+        847.2,
+        230.22
+      ]
+    },
+    {
+      "id": "37",
+      "iri": "http://visualdataweb.org/newOntology/statsOf",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "statsOf",
+        "undefined": "statsOf"
+      },
+      "attributes": [
+        "object"
+      ],
+      "comment": {
+        "undefined": "The performance stats of a player"
+      },
+      "domain": "5",
+      "range": "38",
+      "inverse": "121",
+      "pos": [
+        150.8,
+        -43.88
+      ]
+    },
+    {
+      "id": "39",
+      "iri": "http://visualdataweb.org/newOntology/NumberOfTeams",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "NumberOfTeams",
+        "en": "numberOfTeams",
+        "undefined": "numberOfTeams"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "undefined": "The number of teams competing in a specific league"
+      },
+      "domain": "27",
+      "range": "40",
+      "pos": [
+        1644.01,
+        698.5
+      ]
+    },
+    {
+      "id": "41",
+      "iri": "http://visualdataweb.org/newOntology/hasPlayer",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "hasPlayer"
+      },
+      "attributes": [
+        "object"
+      ],
+      "domain": "13",
+      "range": "38",
+      "inverse": "42",
+      "pos": [
+        280.72,
+        197.53
+      ]
+    },
+    {
+      "id": "43",
+      "iri": "http://visualdataweb.org/newOntology/GoalsScored",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "GoalsScored",
+        "en": "goalsScored",
+        "undefined": "goalsScored"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "undefined": "The goals scored by a player"
+      },
+      "domain": "5",
+      "range": "44",
+      "pos": [
+        -228.6,
+        -65.04
+      ]
+    },
+    {
+      "id": "46",
+      "iri": "http://visualdataweb.org/newOntology/isWonBy",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "isWonBy",
+        "undefined": "isWonBy"
+      },
+      "attributes": [
+        "object"
+      ],
+      "comment": {
+        "undefined": "A trophy won by a team"
+      },
+      "domain": "31",
+      "range": "17",
+      "inverse": "30"
+    },
+    {
+      "id": "21",
+      "iri": "http://visualdataweb.org/newOntology/hosts",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "hosts",
+        "undefined": "hosts"
+      },
+      "attributes": [
+        "asymmetric",
+        "object",
+        "functional"
+      ],
+      "comment": {
+        "undefined": "The stadium in which a match takes place"
+      },
+      "domain": "20",
+      "range": "13",
+      "inverse": "19"
+    },
+    {
+      "id": "51",
+      "iri": "http://visualdataweb.org/newOntology/Score",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "Score",
+        "en": "score",
+        "undefined": "score"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "undefined": "The final score of a match"
+      },
+      "domain": "13",
+      "range": "49",
+      "pos": [
+        163.53,
+        584.12
+      ]
+    },
+    {
+      "id": "55",
+      "iri": "http://visualdataweb.org/newOntology/includesPlayer",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "includesPlayer",
+        "undefined": "includesPlayer"
+      },
+      "attributes": [
+        "object",
+        "functional"
+      ],
+      "comment": {
+        "undefined": "A player included in a team"
+      },
+      "domain": "17",
+      "range": "38",
+      "inverse": "56",
+      "pos": [
+        535.47,
+        211.06
+      ]
+    },
+    {
+      "id": "57",
+      "iri": "http://visualdataweb.org/newOntology/TrophyName",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "TrophyName",
+        "en": "trophyName",
+        "undefined": "trophyName"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "undefined": "The name of a trophy"
+      },
+      "domain": "31",
+      "range": "14",
+      "pos": [
+        1135.66,
+        -72.07
+      ]
+    },
+    {
+      "id": "60",
+      "iri": "http://visualdataweb.org/newOntology/Capacity",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "Capacity",
+        "en": "capacity",
+        "undefined": "capacity"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "undefined": "The capacity of a stadium"
+      },
+      "domain": "20",
+      "range": "25",
+      "pos": [
+        234.75,
+        993.42
+      ]
+    },
+    {
+      "id": "61",
+      "iri": "http://visualdataweb.org/newOntology/TrophyWinner",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "TrophyWinner",
+        "en": "trophyWinner",
+        "undefined": "trophyWinner"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "undefined": "The winner of a trophy"
+      },
+      "domain": "31",
+      "range": "62",
+      "pos": [
+        1038.06,
+        -157.43
+      ]
+    },
+    {
+      "id": "63",
+      "iri": "http://visualdataweb.org/newOntology/TournamentNumOfTeams",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "TournamentNumOfTeams",
+        "en": "tournamentNumOfTeams",
+        "undefined": "tournamentNumOfTeams"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "undefined": "The number of teams in a tournament"
+      },
+      "domain": "45",
+      "range": "64",
+      "pos": [
+        1381.95,
+        364.05
+      ]
+    },
+    {
+      "id": "65",
+      "iri": "http://visualdataweb.org/newOntology/hasTeam",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "hasTeam",
+        "undefined": "hasTeam"
+      },
+      "attributes": [
+        "asymmetric",
+        "object",
+        "functional"
+      ],
+      "comment": {
+        "undefined": "A team included in a tournament"
+      },
+      "domain": "45",
+      "range": "17",
+      "inverse": "66",
+      "pos": [
+        968.76,
+        444.69
+      ]
+    },
+    {
+      "id": "67",
+      "iri": "http://visualdataweb.org/newOntology/MatchAwayTeam",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "MatchAwayTeam",
+        "en": "matchAwayTeam",
+        "undefined": "matchAwayTeam"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "undefined": "The away team of a specific match"
+      },
+      "domain": "13",
+      "range": "68",
+      "pos": [
+        56.25,
+        370.55
+      ]
+    },
+    {
+      "id": "69",
+      "iri": "http://visualdataweb.org/newOntology/YellowCards",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "YellowCards",
+        "en": "yellowCards",
+        "undefined": "yellowCards"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "undefined": "The yellow cards a player has got in a specific season"
+      },
+      "domain": "5",
+      "range": "70",
+      "pos": [
+        -128.56,
+        -201.34
+      ]
+    },
+    {
+      "id": "71",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "72",
+      "range": "45",
+      "pos": [
+        1401.67,
+        284.88
+      ]
+    },
+    {
+      "id": "73",
+      "iri": "http://visualdataweb.org/newOntology/TeamRanking",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "TeamRanking",
+        "en": "teamRanking",
+        "undefined": "teamRanking"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "undefined": "The league ranking of a team"
+      },
+      "domain": "17",
+      "range": "74",
+      "pos": [
+        758.59,
+        590.12
+      ]
+    },
+    {
+      "id": "76",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "27",
+      "range": "45",
+      "pos": [
+        1390.25,
+        607.66
+      ]
+    },
+    {
+      "id": "78",
+      "iri": "http://visualdataweb.org/newOntology/receivedBy",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "receivedBy",
+        "undefined": "receivedBy"
+      },
+      "attributes": [
+        "asymmetric",
+        "object",
+        "functional"
+      ],
+      "comment": {
+        "undefined": "An individual award received by a player"
+      },
+      "domain": "2",
+      "range": "38",
+      "inverse": "79",
+      "pos": [
+        484.07,
+        -271.79
+      ]
+    },
+    {
+      "id": "80",
+      "iri": "http://visualdataweb.org/newOntology/TeamSeason",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "TeamSeason",
+        "en": "teamSeason",
+        "undefined": "teamSeason"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "undefined": "The season of a team"
+      },
+      "domain": "17",
+      "range": "77",
+      "pos": [
+        689.71,
+        319.17
+      ]
+    },
+    {
+      "id": "56",
+      "iri": "http://visualdataweb.org/newOntology/playsFor",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "playsFor",
+        "iri-based": "playsFor",
+        "en": "playsFor"
+      },
+      "attributes": [
+        "object"
+      ],
+      "comment": {
+        "undefined": "The team a specific player is playing for"
+      },
+      "domain": "38",
+      "range": "17",
+      "inverse": "55"
+    },
+    {
+      "id": "82",
+      "iri": "http://visualdataweb.org/newOntology/StadiumName",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "StadiumName",
+        "en": "stadiumName",
+        "undefined": "stadiumName"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "undefined": "The name of a stadium"
+      },
+      "domain": "20",
+      "range": "83",
+      "pos": [
+        435.13,
+        1052.54
+      ]
+    },
+    {
+      "id": "42",
+      "iri": "http://visualdataweb.org/newOntology/participatesIn",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "participatesIn"
+      },
+      "attributes": [
+        "object"
+      ],
+      "domain": "38",
+      "range": "13",
+      "inverse": "41"
+    },
+    {
+      "id": "86",
+      "iri": "http://visualdataweb.org/newOntology/RefereeNationality",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "RefereeNationality",
+        "en": "refereeNationality",
+        "undefined": "refereeNationality"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "undefined": "The nationality of a referee"
+      },
+      "domain": "10",
+      "range": "84",
+      "pos": [
+        -351.54,
+        787.05
+      ]
+    },
+    {
+      "id": "87",
+      "iri": "http://visualdataweb.org/newOntology/height",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "height",
+        "iri-based": "height",
+        "en": "height"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "undefined": "The height of a player"
+      },
+      "domain": "38",
+      "range": "88",
+      "pos": [
+        485.7,
+        -156.89
+      ]
+    },
+    {
+      "id": "89",
+      "iri": "http://visualdataweb.org/newOntology/isPositionOf",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "isPositionOf",
+        "undefined": "isPositionOf"
+      },
+      "attributes": [
+        "object"
+      ],
+      "comment": {
+        "undefined": "A position held by a player"
+      },
+      "domain": "47",
+      "range": "38",
+      "inverse": "114",
+      "pos": [
+        328.84,
+        -263.28
+      ]
+    },
+    {
+      "id": "90",
+      "iri": "http://visualdataweb.org/newOntology/Season",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "Season",
+        "en": "season",
+        "undefined": "season"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "undefined": "The season of the performances of a player"
+      },
+      "domain": "5",
+      "range": "91",
+      "pos": [
+        -59.13,
+        -200.03
+      ]
+    },
+    {
+      "id": "92",
+      "iri": "http://visualdataweb.org/newOntology/manages",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "manages",
+        "iri-based": "manages",
+        "en": "manages"
+      },
+      "attributes": [
+        "asymmetric",
+        "object",
+        "functional"
+      ],
+      "comment": {
+        "undefined": "The coach that manages a team"
+      },
+      "domain": "8",
+      "range": "17",
+      "inverse": "117",
+      "pos": [
+        768.86,
+        741.65
+      ]
+    },
+    {
+      "id": "95",
+      "iri": "http://visualdataweb.org/newOntology/TeamName",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "TeamName",
+        "en": "teamName",
+        "undefined": "teamName"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "undefined": "The name of a team"
+      },
+      "domain": "17",
+      "range": "75",
+      "pos": [
+        809.91,
+        542.66
+      ]
+    },
+    {
+      "id": "96",
+      "iri": "http://visualdataweb.org/newOntology/TeamFormation",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "TeamFormation",
+        "en": "teamFormation",
+        "undefined": "teamFormation"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "undefined": "The formation of a team"
+      },
+      "domain": "17",
+      "range": "94",
+      "pos": [
+        799.08,
+        368.8
+      ]
+    },
+    {
+      "id": "97",
+      "iri": "http://visualdataweb.org/newOntology/CPreviousTeams",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "CPreviousTeams",
+        "en": "cPreviousTeams",
+        "undefined": "cPreviousTeams"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "undefined": "The previous teams a coach has managed so far"
+      },
+      "domain": "8",
+      "range": "36",
+      "pos": [
+        867.36,
+        1179.71
+      ]
+    },
+    {
+      "id": "98",
+      "iri": "http://visualdataweb.org/newOntology/MatchHomeTeam",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "MatchHomeTeam",
+        "en": "matchHomeTeam",
+        "undefined": "matchHomeTeam"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "undefined": "The home team of a specific match"
+      },
+      "domain": "13",
+      "range": "85",
+      "pos": [
+        32.17,
+        429.64
+      ]
+    },
+    {
+      "id": "99",
+      "iri": "http://visualdataweb.org/newOntology/LeagueName",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "LeagueName",
+        "en": "leagueName",
+        "undefined": "leagueName"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "undefined": "The name of a league"
+      },
+      "domain": "27",
+      "range": "100",
+      "pos": [
+        1666.36,
+        775.97
+      ]
+    },
+    {
+      "id": "18",
+      "iri": "http://visualdataweb.org/newOntology/includes",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "includes",
+        "undefined": "isWonBy"
+      },
+      "attributes": [
+        "object"
+      ],
+      "comment": {
+        "undefined": "A match won by a team"
+      },
+      "domain": "13",
+      "range": "17",
+      "inverse": "16"
+    },
+    {
+      "id": "101",
+      "iri": "http://visualdataweb.org/newOntology/PlayerPosition",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "PlayerPosition",
+        "en": "playerPosition"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "undefined": "The position of a player"
+      },
+      "domain": "47",
+      "range": "32",
+      "pos": [
+        241.25,
+        -628.86
+      ]
+    },
+    {
+      "id": "102",
+      "iri": "http://visualdataweb.org/newOntology/TrophyAssociatedLeague",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "TrophyAssociatedLeague",
+        "en": "trophyAssociatedLeague",
+        "undefined": "trophyAssociatedLeague"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "undefined": "What kind of team trophy, like DFB Pokal or other trophies from other countries"
+      },
+      "domain": "31",
+      "range": "53",
+      "pos": [
+        1102.47,
+        -130.81
+      ]
+    },
+    {
+      "id": "79",
+      "iri": "http://visualdataweb.org/newOntology/receives",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "receives",
+        "iri-based": "receives",
+        "en": "receives"
+      },
+      "attributes": [
+        "asymmetric",
+        "object",
+        "functional"
+      ],
+      "comment": {
+        "undefined": "An indivual award won by a player"
+      },
+      "domain": "38",
+      "range": "2",
+      "inverse": "78"
+    },
+    {
+      "id": "103",
+      "iri": "http://visualdataweb.org/newOntology/Region",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "Region",
+        "en": "region",
+        "undefined": "region"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "undefined": "The region or country a league is playing in"
+      },
+      "domain": "27",
+      "range": "104",
+      "pos": [
+        1577.58,
+        933.52
+      ]
+    },
+    {
+      "id": "105",
+      "iri": "http://visualdataweb.org/newOntology/TournamentName",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "TournamentName",
+        "en": "tournamentName",
+        "undefined": "tournamentName"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "undefined": "The name of the tournament"
+      },
+      "domain": "45",
+      "range": "106",
+      "pos": [
+        1312.27,
+        285.05
+      ]
+    },
+    {
+      "id": "107",
+      "iri": "http://visualdataweb.org/newOntology/Fouls",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "Fouls",
+        "en": "fouls",
+        "undefined": "fouls"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "undefined": "The fouls commited by a player"
+      },
+      "domain": "5",
+      "range": "108",
+      "pos": [
+        -184.9,
+        -171.25
+      ]
+    },
+    {
+      "id": "109",
+      "iri": "http://visualdataweb.org/newOntology/Champion",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "Champion",
+        "en": "champion",
+        "undefined": "champion"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "undefined": "The current champion of a League"
+      },
+      "domain": "27",
+      "range": "58",
+      "pos": [
+        1492.48,
+        932.74
+      ]
+    },
+    {
+      "id": "110",
+      "iri": "http://visualdataweb.org/newOntology/StadiumRegion",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "StadiumRegion",
+        "en": "stadiumRegion",
+        "undefined": "stadiumRegion"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "undefined": "The region or country a stadium is located in"
+      },
+      "domain": "20",
+      "range": "33",
+      "pos": [
+        316.82,
+        1078.28
+      ]
+    },
+    {
+      "id": "111",
+      "iri": "http://visualdataweb.org/newOntology/CoachName",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "CoachName",
+        "en": "coachName",
+        "undefined": "coachName"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "undefined": "The name of a team coach"
+      },
+      "domain": "8",
+      "range": "93",
+      "pos": [
+        972.64,
+        1086.98
+      ]
+    },
+    {
+      "id": "113",
+      "iri": "http://visualdataweb.org/newOntology/TournamentChampion",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "TournamentChampion",
+        "en": "tournamentChampion",
+        "undefined": "tournamentChampion"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "undefined": "The champion of a specific tournament"
+      },
+      "domain": "45",
+      "range": "81",
+      "pos": [
+        1385.71,
+        432.18
+      ]
+    },
+    {
+      "id": "114",
+      "iri": "http://visualdataweb.org/newOntology/hasPosition",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "hasPosition",
+        "en": "hasPosition"
+      },
+      "attributes": [
+        "object"
+      ],
+      "comment": {
+        "undefined": "This shows the position of a specific player"
+      },
+      "domain": "38",
+      "range": "47",
+      "inverse": "89"
+    },
+    {
+      "id": "115",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "72",
+      "range": "27"
+    },
+    {
+      "id": "116",
+      "iri": "http://visualdataweb.org/newOntology/HomeTeam",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "HomeTeam",
+        "en": "homeTeam",
+        "undefined": "homeTeam"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "undefined": "The home team of a stadium"
+      },
+      "domain": "20",
+      "range": "52",
+      "pos": [
+        266.77,
+        1049.22
+      ]
+    },
+    {
+      "id": "117",
+      "iri": "http://visualdataweb.org/newOntology/managedBy",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "managedBy",
+        "undefined": "managedBy"
+      },
+      "attributes": [
+        "asymmetric",
+        "object",
+        "functional"
+      ],
+      "comment": {
+        "undefined": "A team managed by a coach"
+      },
+      "domain": "17",
+      "range": "8",
+      "inverse": "92"
+    },
+    {
+      "id": "118",
+      "iri": "http://visualdataweb.org/newOntology/occuredInMatch",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "occuredInMatch"
+      },
+      "attributes": [
+        "object"
+      ],
+      "domain": "5",
+      "range": "13",
+      "inverse": "133",
+      "pos": [
+        48.55,
+        195.45
+      ]
+    },
+    {
+      "id": "66",
+      "iri": "http://visualdataweb.org/newOntology/partOf",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "partOf",
+        "iri-based": "partOf",
+        "en": "partOf"
+      },
+      "attributes": [
+        "asymmetric",
+        "object",
+        "functional"
+      ],
+      "comment": {
+        "undefined": "The tournament a specific team is part of"
+      },
+      "domain": "17",
+      "range": "45",
+      "inverse": "65"
+    },
+    {
+      "id": "119",
+      "iri": "http://visualdataweb.org/newOntology/isHomeOf",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "isHomeOf",
+        "undefined": "isHomeOf"
+      },
+      "attributes": [
+        "object"
+      ],
+      "comment": {
+        "undefined": "A stadium a team is home of"
+      },
+      "domain": "20",
+      "range": "17",
+      "inverse": "120",
+      "pos": [
+        525.05,
+        690.29
+      ]
+    },
+    {
+      "id": "121",
+      "iri": "http://visualdataweb.org/newOntology/hasStats",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "hasStats",
+        "iri-based": "hasStats",
+        "en": "hasStats"
+      },
+      "attributes": [
+        "object"
+      ],
+      "comment": {
+        "undefined": "The performance stats of a specific player, like goals, assists, and so on"
+      },
+      "domain": "38",
+      "range": "5",
+      "inverse": "37"
+    },
+    {
+      "id": "122",
+      "iri": "http://visualdataweb.org/newOntology/Date",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "Date",
+        "en": "date",
+        "undefined": "date"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "undefined": "The date when a match took place"
+      },
+      "domain": "13",
+      "range": "29",
+      "pos": [
+        97.49,
+        568.5
+      ]
+    },
+    {
+      "id": "120",
+      "iri": "http://visualdataweb.org/newOntology/playsIn",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "playsIn",
+        "iri-based": "playsIn",
+        "en": "playsIn"
+      },
+      "attributes": [
+        "asymmetric",
+        "object",
+        "functional"
+      ],
+      "comment": {
+        "undefined": "The home stadium of a team"
+      },
+      "domain": "17",
+      "range": "20",
+      "inverse": "119"
+    },
+    {
+      "id": "123",
+      "iri": "http://visualdataweb.org/newOntology/TeamLeague",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "TeamLeague",
+        "en": "teamLeague",
+        "undefined": "teamLeague"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "undefined": "The league a team is playing in"
+      },
+      "domain": "17",
+      "range": "15",
+      "pos": [
+        814.64,
+        428.85
+      ]
+    },
+    {
+      "id": "124",
+      "iri": "http://visualdataweb.org/newOntology/officiatedBy",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "officiatedBy",
+        "undefined": "officiatedBy"
+      },
+      "attributes": [
+        "object"
+      ],
+      "comment": {
+        "undefined": "A match officiated by a referee"
+      },
+      "domain": "13",
+      "range": "10",
+      "inverse": "12"
+    },
+    {
+      "id": "125",
+      "iri": "http://visualdataweb.org/newOntology/PlayerName",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "PlayerName",
+        "en": "playerName",
+        "undefined": "playerName"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "undefined": "The name of a player"
+      },
+      "domain": "38",
+      "range": "50",
+      "pos": [
+        376.71,
+        -197.47
+      ]
+    },
+    {
+      "id": "126",
+      "iri": "http://visualdataweb.org/newOntology/AwardName",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "AwardName",
+        "en": "awardName",
+        "undefined": "awardName"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "undefined": "The indivual award name"
+      },
+      "domain": "2",
+      "range": "48",
+      "pos": [
+        602.8,
+        -650.99
+      ]
+    },
+    {
+      "id": "127",
+      "iri": "http://visualdataweb.org/newOntology/OpeningYear",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "OpeningYear",
+        "en": "openingYear",
+        "undefined": "openingYear"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "undefined": "The opening year of a stadium"
+      },
+      "domain": "20",
+      "range": "112",
+      "pos": [
+        376.07,
+        1082.3
+      ]
+    },
+    {
+      "id": "128",
+      "iri": "http://visualdataweb.org/newOntology/RedCards",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "RedCards",
+        "en": "redCards",
+        "undefined": "redCards"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "undefined": "The red cards a player has gotten in a season"
+      },
+      "domain": "5",
+      "range": "22",
+      "pos": [
+        -218.19,
+        -121.78
+      ]
+    },
+    {
+      "id": "129",
+      "iri": "http://visualdataweb.org/newOntology/PassAccuracy",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "PassAccuracy",
+        "en": "passAccuracy",
+        "undefined": "passAccuracy"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "undefined": "The pass accuracy of a player in a season"
+      },
+      "domain": "5",
+      "range": "54",
+      "pos": [
+        -205.53,
+        43.78
+      ]
+    },
+    {
+      "id": "130",
+      "iri": "http://visualdataweb.org/newOntology/CPreferredFormation",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "CPreferredFormation",
+        "en": "cPreferredFormation",
+        "undefined": "cPreferredFormation"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "undefined": "The preferred formation of a coach"
+      },
+      "domain": "8",
+      "range": "35",
+      "pos": [
+        801.84,
+        1168.23
+      ]
+    },
+    {
+      "id": "131",
+      "iri": "http://visualdataweb.org/newOntology/PlayerBirthdate",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "PlayerBirthdate",
+        "en": "playerBirthdate",
+        "undefined": "playerBirthdate"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "undefined": "The birthday of a player"
+      },
+      "domain": "38",
+      "range": "59",
+      "pos": [
+        506.19,
+        -92.45
+      ]
+    },
+    {
+      "id": "132",
+      "iri": "http://visualdataweb.org/newOntology/MatchWinner",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "MatchWinner",
+        "en": "matchWinner",
+        "undefined": "matchWinner"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "undefined": "The winner of a specific match"
+      },
+      "domain": "13",
+      "range": "34",
+      "pos": [
+        41.97,
+        484.12
+      ]
+    },
+    {
+      "id": "133",
+      "iri": "http://visualdataweb.org/newOntology/hasPerformanceStats",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "hasPerformanceStats"
+      },
+      "attributes": [
+        "object"
+      ],
+      "domain": "13",
+      "range": "5",
+      "inverse": "118"
     }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "34",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "30",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "37",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "38",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "39",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "40",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/League",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "League",
-      "iri-based" : "League",
-      "en" : "League"
-    },
-    "comment" : {
-      "undefined" : "A league type of tournament, where a team competes with many other teams of a specific league, winning 3, 1, or 0 points each game. At the end of the season, the team that has the most points wins the league"
-    },
-    "id" : "32",
-    "superClasses" : [ "47" ]
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/Position",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Position",
-      "en" : "Position"
-    },
-    "subClasses" : [ "0", "49", "50", "51" ],
-    "comment" : {
-      "undefined" : "This class shows the parent class \"Position\" which includes subclasses of positions of a player"
-    },
-    "id" : "1"
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "44",
-    "label" : {
-      "IRI-based" : "integer"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "52",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "53",
-    "label" : {
-      "IRI-based" : "integer"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "55",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "56",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "57",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "58",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "63",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "46",
-    "label" : {
-      "IRI-based" : "integer"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "64",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/Defender",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Defender",
-      "iri-based" : "Defender",
-      "en" : "Defender"
-    },
-    "subClasses" : [ "72", "73", "74" ],
-    "comment" : {
-      "undefined" : "A generic subclass for defenders in football"
-    },
-    "id" : "50",
-    "superClasses" : [ "1" ]
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/Coach",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Coach",
-      "iri-based" : "Coach",
-      "en" : "Coach"
-    },
-    "comment" : {
-      "undefined" : "The coach managing a team"
-    },
-    "id" : "13"
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "85",
-    "label" : {
-      "IRI-based" : "integer"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "62",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "92",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "81",
-    "label" : {
-      "IRI-based" : "integer"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "70",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "76",
-    "label" : {
-      "IRI-based" : "integer"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "95",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/Tournament",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Tournament",
-      "iri-based" : "Tournament",
-      "en" : "Tournament"
-    },
-    "subClasses" : [ "100", "32" ],
-    "comment" : {
-      "undefined" : "The tournament a team is currently competing in"
-    },
-    "id" : "47"
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "101",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "102",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "103",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "91",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "84",
-    "label" : {
-      "IRI-based" : "integer"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "94",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "33",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "105",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "106",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/KnockOutTournament",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "KnockOutTournament",
-      "iri-based" : "KnockOutTournament"
-    },
-    "comment" : {
-      "undefined" : "A knock-out pyramid style of a tournament, where a team has to compete in a KO-Stage like quarter final, semi final and final"
-    },
-    "id" : "100",
-    "superClasses" : [ "47" ]
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/Team",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Team",
-      "iri-based" : "Team",
-      "en" : "Team"
-    },
-    "comment" : {
-      "undefined" : "A professional football team"
-    },
-    "id" : "23"
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/RightWing",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "RightWing",
-      "iri-based" : "RightWing"
-    },
-    "comment" : {
-      "undefined" : "The right wing position of a player"
-    },
-    "id" : "2",
-    "superClasses" : [ "0" ]
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/Match",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Match",
-      "iri-based" : "Match",
-      "en" : "Match"
-    },
-    "comment" : {
-      "undefined" : "A competetive football event held between two teams"
-    },
-    "id" : "19"
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/Midfielder",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Midfielder",
-      "iri-based" : "Midfielder",
-      "en" : "Midfielder"
-    },
-    "subClasses" : [ "111", "112", "113", "114" ],
-    "comment" : {
-      "undefined" : "The generic class of a midfielder, including subclasses"
-    },
-    "id" : "49",
-    "superClasses" : [ "1" ]
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/PerformanceStats",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "PerformanceStats",
-      "iri-based" : "PerformanceStats",
-      "en" : "PerformanceStats"
-    },
-    "comment" : {
-      "undefined" : "The perfomance statistics of a player like goal scored, assists and so on."
-    },
-    "id" : "10"
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/Player",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Player",
-      "iri-based" : "Player",
-      "en" : "Player"
-    },
-    "comment" : {
-      "undefined" : "A professional football player"
-    },
-    "id" : "42"
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/DefensiveMidfielder",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "DefensiveMidfielder",
-      "iri-based" : "DefensiveMidfielder"
-    },
-    "comment" : {
-      "undefined" : "The defensive midfielder position of a player"
-    },
-    "id" : "111",
-    "superClasses" : [ "49" ]
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/Goalkeeper",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Goalkeeper",
-      "iri-based" : "Goalkeeper",
-      "en" : "Goalkeeper"
-    },
-    "comment" : {
-      "undefined" : "The goalkeeper of a player"
-    },
-    "id" : "51",
-    "superClasses" : [ "1" ]
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/LeftWing",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "LeftWing",
-      "iri-based" : "LeftWing"
-    },
-    "comment" : {
-      "undefined" : "The left wing position of a player"
-    },
-    "id" : "3",
-    "superClasses" : [ "0" ]
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "137",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "8",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
-    "id" : "138",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "110",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/Trophy",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Trophy",
-      "iri-based" : "Trophy",
-      "en" : "Trophy"
-    },
-    "comment" : {
-      "undefined" : "A trophy won by a team"
-    },
-    "id" : "36"
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "67",
-    "label" : {
-      "IRI-based" : "integer"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "126",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "136",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "14",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/RightMidfield",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "RightMidfield",
-      "iri-based" : "RightMidfield"
-    },
-    "comment" : {
-      "undefined" : "The right midfield position of a player"
-    },
-    "id" : "112",
-    "superClasses" : [ "49" ]
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "11",
-    "label" : {
-      "IRI-based" : "integer"
-    }
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/LeftMidfield",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "LeftMidfield",
-      "iri-based" : "LeftMidfield"
-    },
-    "comment" : {
-      "undefined" : "The left midfield position of a player"
-    },
-    "id" : "114",
-    "superClasses" : [ "49" ]
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/LeftBack",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "LeftBack",
-      "iri-based" : "LeftBack"
-    },
-    "comment" : {
-      "undefined" : "A left back position of a player"
-    },
-    "id" : "72",
-    "superClasses" : [ "50" ]
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/Award",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Award",
-      "iri-based" : "Award",
-      "en" : "Award"
-    },
-    "comment" : {
-      "undefined" : "An indivual award won by a player"
-    },
-    "id" : "7"
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/RightBack",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "RightBack",
-      "iri-based" : "RightBack"
-    },
-    "comment" : {
-      "undefined" : "A right back position of a player"
-    },
-    "id" : "74",
-    "superClasses" : [ "50" ]
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/CenterBack",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "CenterBack",
-      "iri-based" : "CenterBack"
-    },
-    "comment" : {
-      "undefined" : "The centerback position of a player"
-    },
-    "id" : "73",
-    "superClasses" : [ "50" ]
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/Referee",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Referee",
-      "iri-based" : "Referee",
-      "en" : "Referee"
-    },
-    "comment" : {
-      "undefined" : "The referee officiating a football match"
-    },
-    "id" : "16"
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/Stadium",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Stadium",
-      "iri-based" : "Stadium",
-      "en" : "Stadium"
-    },
-    "comment" : {
-      "undefined" : "The stadium of a football team"
-    },
-    "id" : "26"
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/OffensiveMidfielder",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "OffensiveMidfielder",
-      "iri-based" : "OffensiveMidfielder"
-    },
-    "comment" : {
-      "undefined" : "The offensive midfielder position of a player"
-    },
-    "id" : "113",
-    "superClasses" : [ "49" ]
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/Striker",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Striker",
-      "iri-based" : "Striker"
-    },
-    "comment" : {
-      "undefined" : "The main striker position of a player"
-    },
-    "id" : "4",
-    "superClasses" : [ "0" ]
-  } ],
-  "property" : [ {
-    "id" : "6",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "9",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "12",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "15",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "18",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "22",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "25",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "29",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "31",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "35",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "41",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "43",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "45",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "48",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "27",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "54",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "59",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "61",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "65",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "66",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "68",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "69",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "71",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "75",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "77",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "79",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "80",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "82",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "83",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "86",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "87",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "88",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "90",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "60",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "93",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "96",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "97",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "98",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "99",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "104",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "107",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "108",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "109",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "115",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "116",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "24",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "117",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "118",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "119",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "120",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "121",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "89",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "122",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "123",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "124",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "125",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "127",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "128",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "129",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "130",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "131",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "132",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "133",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "134",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "135",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "139",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "140",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "141",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "142",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "143",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "78",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "144",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "146",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "147",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "145",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "148",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "149",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "150",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "151",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "152",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "153",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "154",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "155",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "156",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "157",
-    "type" : "owl:datatypeProperty"
-  } ],
-  "propertyAttribute" : [ {
-    "iri" : "http://visualdataweb.org/newOntology/AwardSeason",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "range" : "8",
-    "label" : {
-      "IRI-based" : "AwardSeason",
-      "iri-based" : "AwardSeason",
-      "en" : "AwardSeason"
-    },
-    "domain" : "7",
-    "comment" : {
-      "undefined" : "The season of an award"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "6"
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/Assists",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "range" : "11",
-    "label" : {
-      "IRI-based" : "Assists",
-      "iri-based" : "Assists",
-      "en" : "Assists"
-    },
-    "domain" : "10",
-    "comment" : {
-      "undefined" : "The assists of a specific player within a season"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "9"
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/CoachNationality",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "range" : "14",
-    "label" : {
-      "IRI-based" : "CoachNationality",
-      "iri-based" : "CoachNationality",
-      "en" : "CoachNationality"
-    },
-    "domain" : "13",
-    "comment" : {
-      "undefined" : "The nationality of a coach"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "12"
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/RBirthdate",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "range" : "17",
-    "label" : {
-      "IRI-based" : "RBirthdate",
-      "iri-based" : "RBirthdate",
-      "en" : "RBirthdate"
-    },
-    "domain" : "16",
-    "comment" : {
-      "undefined" : "The birthday of a referee"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "15"
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/officiates",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "range" : "19",
-    "label" : {
-      "IRI-based" : "officiates",
-      "iri-based" : "officiates",
-      "en" : "officiates"
-    },
-    "domain" : "16",
-    "comment" : {
-      "undefined" : "The referee that officiates a specific match"
-    },
-    "attributes" : [ "object", "asymmetric", "functional" ],
-    "id" : "18"
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/competesIn",
-    "inverse" : "24",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "range" : "19",
-    "label" : {
-      "IRI-based" : "competesIn",
-      "iri-based" : "competesIn",
-      "en" : "competesIn"
-    },
-    "domain" : "23",
-    "comment" : {
-      "undefined" : "This represents a relationship between a team and a match"
-    },
-    "attributes" : [ "object" ],
-    "id" : "22"
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/hostedBy",
-    "inverse" : "27",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "range" : "26",
-    "label" : {
-      "IRI-based" : "hostedBy",
-      "iri-based" : "hostedBy",
-      "en" : "hostedBy"
-    },
-    "domain" : "19",
-    "comment" : {
-      "undefined" : "The stadium of a specific team of a match"
-    },
-    "attributes" : [ "object", "functional" ],
-    "id" : "25"
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/RefereeName",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "range" : "30",
-    "label" : {
-      "IRI-based" : "RefereeName",
-      "iri-based" : "RefereeName",
-      "en" : "RefereeName"
-    },
-    "domain" : "16",
-    "comment" : {
-      "undefined" : "The name of the referee"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "29"
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/SeasonYear",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "range" : "33",
-    "label" : {
-      "IRI-based" : "SeasonYear",
-      "iri-based" : "SeasonYear",
-      "en" : "SeasonYeaR"
-    },
-    "domain" : "32",
-    "comment" : {
-      "undefined" : "The season of a League"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "31"
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/wins",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "range" : "36",
-    "label" : {
-      "IRI-based" : "wins",
-      "iri-based" : "wins",
-      "en" : "wins"
-    },
-    "domain" : "23",
-    "comment" : {
-      "undefined" : "A team that wins a trophy"
-    },
-    "attributes" : [ "object" ],
-    "id" : "35"
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/statsOf",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "range" : "42",
-    "label" : {
-      "IRI-based" : "statsOf",
-      "undefined" : "statsOf"
-    },
-    "domain" : "10",
-    "comment" : {
-      "undefined" : "The performance stats of a player"
-    },
-    "attributes" : [ "object" ],
-    "id" : "41"
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/NumberOfTeams",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "range" : "44",
-    "label" : {
-      "IRI-based" : "NumberOfTeams",
-      "iri-based" : "NumberOfTeams",
-      "en" : "NumberOfTeams"
-    },
-    "domain" : "32",
-    "comment" : {
-      "undefined" : "The number of teams competing in a specific league"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "43"
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/GoalsScored",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "range" : "46",
-    "label" : {
-      "IRI-based" : "GoalsScored",
-      "iri-based" : "GoalsScored",
-      "en" : "GoalsScored"
-    },
-    "domain" : "10",
-    "comment" : {
-      "undefined" : "The goals scored by a player"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "45"
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/isWonBy",
-    "inverse" : "35",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "range" : "23",
-    "label" : {
-      "IRI-based" : "isWonBy",
-      "undefined" : "isWonBy"
-    },
-    "domain" : "36",
-    "comment" : {
-      "undefined" : "A trophy won by a team"
-    },
-    "attributes" : [ "object" ],
-    "id" : "48"
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/hosts",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "range" : "19",
-    "label" : {
-      "IRI-based" : "hosts",
-      "undefined" : "hosts"
-    },
-    "domain" : "26",
-    "comment" : {
-      "undefined" : "The stadium in which a match takes place"
-    },
-    "attributes" : [ "object", "asymmetric", "functional" ],
-    "id" : "27"
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/Score",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "range" : "20",
-    "label" : {
-      "IRI-based" : "Score",
-      "iri-based" : "Score",
-      "en" : "Score"
-    },
-    "domain" : "19",
-    "comment" : {
-      "undefined" : "The final score of a match"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "54"
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/includesPlayer",
-    "inverse" : "60",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "range" : "42",
-    "label" : {
-      "IRI-based" : "includesPlayer",
-      "undefined" : "includesPlayer"
-    },
-    "domain" : "23",
-    "comment" : {
-      "undefined" : "A player included in a team"
-    },
-    "attributes" : [ "object", "functional" ],
-    "id" : "59"
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/TrophyName",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "range" : "62",
-    "label" : {
-      "IRI-based" : "TrophyName",
-      "iri-based" : "TrophyName",
-      "en" : "TrophyName"
-    },
-    "domain" : "36",
-    "comment" : {
-      "undefined" : "The name of a trophy"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "61"
-  }, {
-    "range" : "1",
-    "domain" : "0",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "65"
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/Capacity",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "range" : "67",
-    "label" : {
-      "IRI-based" : "Capacity",
-      "iri-based" : "Capacity",
-      "en" : "Capacity"
-    },
-    "domain" : "26",
-    "comment" : {
-      "undefined" : "The capacity of a stadium"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "66"
-  }, {
-    "range" : "1",
-    "domain" : "50",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "68"
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/TrophyWinner",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "range" : "70",
-    "label" : {
-      "IRI-based" : "TrophyWinner",
-      "iri-based" : "TrophyWinner",
-      "en" : "TrophyWinner"
-    },
-    "domain" : "36",
-    "comment" : {
-      "undefined" : "The winner of a trophy"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "69"
-  }, {
-    "range" : "1",
-    "domain" : "49",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "71"
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/TournamentNumOfTeams",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "range" : "76",
-    "label" : {
-      "IRI-based" : "TournamentNumOfTeams",
-      "iri-based" : "TournamentNumOfTeams",
-      "en" : "TournamentNumOfTeams"
-    },
-    "domain" : "47",
-    "comment" : {
-      "undefined" : "The number of teams in a tournament"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "75"
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/hasTeam",
-    "inverse" : "78",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "range" : "23",
-    "label" : {
-      "IRI-based" : "hasTeam",
-      "undefined" : "hasTeam"
-    },
-    "domain" : "47",
-    "comment" : {
-      "undefined" : "A team included in a tournament"
-    },
-    "attributes" : [ "object", "asymmetric", "functional" ],
-    "id" : "77"
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/MatchAwayTeam",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "range" : "58",
-    "label" : {
-      "IRI-based" : "MatchAwayTeam",
-      "iri-based" : "MatchAwayTeam",
-      "en" : "MatchAwayTeam"
-    },
-    "domain" : "19",
-    "comment" : {
-      "undefined" : "The away team of a specific match"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "79"
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/YellowCards",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "range" : "81",
-    "label" : {
-      "IRI-based" : "YellowCards",
-      "iri-based" : "YellowCards",
-      "en" : "YellowCards"
-    },
-    "domain" : "10",
-    "comment" : {
-      "undefined" : "The yellow cards a player has got in a specific season"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "80"
-  }, {
-    "range" : "0",
-    "domain" : "2",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "82"
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/TeamRanking",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "range" : "84",
-    "label" : {
-      "IRI-based" : "TeamRanking",
-      "iri-based" : "TeamRanking",
-      "en" : "TeamRanking"
-    },
-    "domain" : "23",
-    "comment" : {
-      "undefined" : "The league ranking of a team"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "83"
-  }, {
-    "range" : "0",
-    "domain" : "4",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "86"
-  }, {
-    "range" : "0",
-    "domain" : "3",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "87"
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/receivedBy",
-    "inverse" : "89",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "range" : "42",
-    "label" : {
-      "IRI-based" : "receivedBy",
-      "undefined" : "receivedBy"
-    },
-    "domain" : "7",
-    "comment" : {
-      "undefined" : "An individual award received by a player"
-    },
-    "attributes" : [ "object", "asymmetric", "functional" ],
-    "id" : "88"
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/TeamSeason",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "range" : "91",
-    "label" : {
-      "IRI-based" : "TeamSeason",
-      "iri-based" : "TeamSeason",
-      "en" : "TeamSeason"
-    },
-    "domain" : "23",
-    "comment" : {
-      "undefined" : "The season of the team"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "90"
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/playsFor",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "range" : "23",
-    "label" : {
-      "IRI-based" : "playsFor",
-      "iri-based" : "playsFor",
-      "en" : "playsFor"
-    },
-    "domain" : "42",
-    "comment" : {
-      "undefined" : "The team a specific player is playing for"
-    },
-    "attributes" : [ "object" ],
-    "id" : "60"
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/StadiumName",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "range" : "94",
-    "label" : {
-      "IRI-based" : "StadiumName",
-      "iri-based" : "StadiumName",
-      "en" : "StadiumName"
-    },
-    "domain" : "26",
-    "comment" : {
-      "undefined" : "The name of a stadium"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "93"
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/RefereeNationality",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "range" : "34",
-    "label" : {
-      "IRI-based" : "RefereeNationality",
-      "iri-based" : "RefereeNationality",
-      "en" : "RefereeNationality"
-    },
-    "domain" : "16",
-    "comment" : {
-      "undefined" : "The nationality of a referee"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "96"
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/height",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "range" : "85",
-    "label" : {
-      "IRI-based" : "height",
-      "iri-based" : "height",
-      "en" : "height"
-    },
-    "domain" : "42",
-    "comment" : {
-      "undefined" : "The height of a player"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "97"
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/isPositionOf",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "range" : "42",
-    "label" : {
-      "IRI-based" : "isPositionOf",
-      "undefined" : "isPositionOf"
-    },
-    "domain" : "1",
-    "comment" : {
-      "undefined" : "A position held by a player"
-    },
-    "attributes" : [ "object" ],
-    "id" : "98"
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/Season",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "range" : "5",
-    "label" : {
-      "IRI-based" : "Season",
-      "iri-based" : "Season",
-      "en" : "Season"
-    },
-    "domain" : "10",
-    "comment" : {
-      "undefined" : "The season of the performances of a player"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "99"
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/manages",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "range" : "23",
-    "label" : {
-      "IRI-based" : "manages",
-      "iri-based" : "manages",
-      "en" : "manages"
-    },
-    "domain" : "13",
-    "comment" : {
-      "undefined" : "The coach that manages a team"
-    },
-    "attributes" : [ "object", "asymmetric", "functional" ],
-    "id" : "104"
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/TeamName",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "range" : "102",
-    "label" : {
-      "IRI-based" : "TeamName",
-      "iri-based" : "TeamName",
-      "en" : "TeamName"
-    },
-    "domain" : "23",
-    "comment" : {
-      "undefined" : "The name of a team"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "107"
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/TeamFormation",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "range" : "105",
-    "label" : {
-      "IRI-based" : "TeamFormation",
-      "iri-based" : "TeamFormation",
-      "en" : "TeamFormation"
-    },
-    "domain" : "23",
-    "comment" : {
-      "undefined" : "The formation of a team"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "108"
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/CPreviousTeams",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "range" : "110",
-    "label" : {
-      "IRI-based" : "CPreviousTeams",
-      "iri-based" : "CPreviousTeams",
-      "en" : "CPreviousTeams"
-    },
-    "domain" : "13",
-    "comment" : {
-      "undefined" : "The previous teams a coach has managed so far"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "109"
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/MatchHomeTeam",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "range" : "57",
-    "label" : {
-      "IRI-based" : "MatchHomeTeam",
-      "iri-based" : "MatchHomeTeam",
-      "en" : "MatchHomeTeam"
-    },
-    "domain" : "19",
-    "comment" : {
-      "undefined" : "The home team of a specific match"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "115"
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/LeagueName",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "range" : "55",
-    "label" : {
-      "IRI-based" : "LeagueName",
-      "iri-based" : "LeagueName",
-      "en" : "LeagueName"
-    },
-    "domain" : "32",
-    "comment" : {
-      "undefined" : "The name of a league"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "116"
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/includes",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "range" : "23",
-    "label" : {
-      "IRI-based" : "includes",
-      "undefined" : "isWonBy"
-    },
-    "domain" : "19",
-    "comment" : {
-      "undefined" : "A match won by a team"
-    },
-    "attributes" : [ "object" ],
-    "id" : "24"
-  }, {
-    "range" : "49",
-    "domain" : "113",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "117"
-  }, {
-    "range" : "49",
-    "domain" : "112",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "118"
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/PlayerPosition",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "range" : "39",
-    "label" : {
-      "IRI-based" : "PlayerPosition",
-      "en" : "PlayerPosition"
-    },
-    "domain" : "1",
-    "comment" : {
-      "undefined" : "The position of a player"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "119"
-  }, {
-    "range" : "49",
-    "domain" : "114",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "120"
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/TrophyAssociatedLeague",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "range" : "92",
-    "label" : {
-      "IRI-based" : "TrophyAssociatedLeague",
-      "iri-based" : "TrophyAssociatedLeague",
-      "en" : "TrophyAssociatedLeague"
-    },
-    "domain" : "36",
-    "comment" : {
-      "undefined" : "What kind of team trophy, like DFB Pokal or other trophies from other countries"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "121"
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/receives",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "range" : "7",
-    "label" : {
-      "IRI-based" : "receives",
-      "iri-based" : "receives",
-      "en" : "receives"
-    },
-    "domain" : "42",
-    "comment" : {
-      "undefined" : "An indivual award won by a player"
-    },
-    "attributes" : [ "object", "asymmetric", "functional" ],
-    "id" : "89"
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/TournamentName",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "range" : "95",
-    "label" : {
-      "IRI-based" : "TournamentName",
-      "iri-based" : "TournamentName",
-      "en" : "TournamentName"
-    },
-    "domain" : "47",
-    "comment" : {
-      "undefined" : "The name of the tournament"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "122"
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/Region",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "range" : "21",
-    "label" : {
-      "IRI-based" : "Region",
-      "iri-based" : "Region",
-      "en" : "Region"
-    },
-    "domain" : "32",
-    "comment" : {
-      "undefined" : "The region or country a league is playing in"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "123"
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/Fouls",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "range" : "64",
-    "label" : {
-      "IRI-based" : "Fouls",
-      "iri-based" : "Fouls",
-      "en" : "Fouls"
-    },
-    "domain" : "10",
-    "comment" : {
-      "undefined" : "The fouls commited by a player"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "124"
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/Champion",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "range" : "126",
-    "label" : {
-      "IRI-based" : "Champion",
-      "iri-based" : "Champion",
-      "en" : "Champion"
-    },
-    "domain" : "32",
-    "comment" : {
-      "undefined" : "The current champion of a League"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "125"
-  }, {
-    "range" : "47",
-    "domain" : "32",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "127"
-  }, {
-    "range" : "47",
-    "domain" : "100",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "128"
-  }, {
-    "range" : "49",
-    "domain" : "111",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "129"
-  }, {
-    "range" : "50",
-    "domain" : "72",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "130"
-  }, {
-    "range" : "1",
-    "domain" : "51",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "131"
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/StadiumRegion",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "range" : "106",
-    "label" : {
-      "IRI-based" : "StadiumRegion",
-      "iri-based" : "StadiumRegion",
-      "en" : "StadiumRegion"
-    },
-    "domain" : "26",
-    "comment" : {
-      "undefined" : "The region or country a stadium is located in"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "132"
-  }, {
-    "range" : "50",
-    "domain" : "74",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "133"
-  }, {
-    "range" : "50",
-    "domain" : "73",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "134"
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/CoachName",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "range" : "136",
-    "label" : {
-      "IRI-based" : "CoachName",
-      "iri-based" : "CoachName",
-      "en" : "CoachName"
-    },
-    "domain" : "13",
-    "comment" : {
-      "undefined" : "The name of a team coach"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "135"
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/TournamentChampion",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "range" : "101",
-    "label" : {
-      "IRI-based" : "TournamentChampion",
-      "iri-based" : "TournamentChampion",
-      "en" : "TournamentChampion"
-    },
-    "domain" : "47",
-    "comment" : {
-      "undefined" : "The champion of a specific tournament"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "139"
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/hasPosition",
-    "inverse" : "98",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "range" : "1",
-    "label" : {
-      "IRI-based" : "hasPosition",
-      "en" : "hasPosition"
-    },
-    "domain" : "42",
-    "comment" : {
-      "undefined" : "This shows the position of a specific player"
-    },
-    "attributes" : [ "object" ],
-    "id" : "140"
-  }, {
-    "range" : "32",
-    "domain" : "100",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "141"
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/HomeTeam",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "range" : "56",
-    "label" : {
-      "IRI-based" : "HomeTeam",
-      "iri-based" : "HomeTeam",
-      "en" : "HomeTeam"
-    },
-    "domain" : "26",
-    "comment" : {
-      "undefined" : "The home team of a stadium"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "142"
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/managedBy",
-    "inverse" : "104",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "range" : "13",
-    "label" : {
-      "IRI-based" : "managedBy",
-      "undefined" : "managedBy"
-    },
-    "domain" : "23",
-    "comment" : {
-      "undefined" : "A team managed by a coach"
-    },
-    "attributes" : [ "object", "asymmetric", "functional" ],
-    "id" : "143"
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/partOf",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "range" : "47",
-    "label" : {
-      "IRI-based" : "partOf",
-      "iri-based" : "partOf",
-      "en" : "partOf"
-    },
-    "domain" : "23",
-    "comment" : {
-      "undefined" : "The tournament a specific team is part of"
-    },
-    "attributes" : [ "object", "asymmetric", "functional" ],
-    "id" : "78"
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/isHomeOf",
-    "inverse" : "145",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "range" : "23",
-    "label" : {
-      "IRI-based" : "isHomeOf",
-      "undefined" : "isHomeOf"
-    },
-    "domain" : "26",
-    "comment" : {
-      "undefined" : "A stadium a team is home of"
-    },
-    "attributes" : [ "object" ],
-    "id" : "144"
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/hasStats",
-    "inverse" : "41",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "range" : "10",
-    "label" : {
-      "IRI-based" : "hasStats",
-      "iri-based" : "hasStats",
-      "en" : "hasStats"
-    },
-    "domain" : "42",
-    "comment" : {
-      "undefined" : "The performance stats of a specific player, like goals, assists, and so on"
-    },
-    "attributes" : [ "object" ],
-    "id" : "146"
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/Date",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "range" : "63",
-    "label" : {
-      "IRI-based" : "Date",
-      "iri-based" : "Date",
-      "en" : "Date"
-    },
-    "domain" : "19",
-    "comment" : {
-      "undefined" : "The date when a match took place"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "147"
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/playsIn",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "range" : "26",
-    "label" : {
-      "IRI-based" : "playsIn",
-      "iri-based" : "playsIn",
-      "en" : "playsIn"
-    },
-    "domain" : "23",
-    "comment" : {
-      "undefined" : "The home stadium of a team"
-    },
-    "attributes" : [ "object", "asymmetric", "functional" ],
-    "id" : "145"
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/TeamLeague",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "range" : "103",
-    "label" : {
-      "IRI-based" : "TeamLeague",
-      "iri-based" : "TeamLeague",
-      "en" : "TeamLeague"
-    },
-    "domain" : "23",
-    "comment" : {
-      "undefined" : "The league a team is playing in"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "148"
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/officiatedBy",
-    "inverse" : "18",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "range" : "16",
-    "label" : {
-      "IRI-based" : "officiatedBy",
-      "undefined" : "officiatedBy"
-    },
-    "domain" : "19",
-    "comment" : {
-      "undefined" : "A match officiated by a referee"
-    },
-    "attributes" : [ "object" ],
-    "id" : "149"
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/AwardName",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "range" : "137",
-    "label" : {
-      "IRI-based" : "AwardName",
-      "iri-based" : "AwardName",
-      "en" : "AwardName"
-    },
-    "domain" : "7",
-    "comment" : {
-      "undefined" : "The indivual award name"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "150"
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/PlayerName",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "range" : "40",
-    "label" : {
-      "IRI-based" : "PlayerName",
-      "iri-based" : "PlayerName",
-      "en" : "PlayerName"
-    },
-    "domain" : "42",
-    "comment" : {
-      "undefined" : "The name of a player"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "151"
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/OpeningYear",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "range" : "53",
-    "label" : {
-      "IRI-based" : "OpeningYear",
-      "iri-based" : "OpeningYear",
-      "en" : "OpeningYear"
-    },
-    "domain" : "26",
-    "comment" : {
-      "undefined" : "The opening year of a stadium"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "152"
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/RedCards",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "range" : "28",
-    "label" : {
-      "IRI-based" : "RedCards",
-      "iri-based" : "RedCards",
-      "en" : "RedCards"
-    },
-    "domain" : "10",
-    "comment" : {
-      "undefined" : "The red cards a player has gotten in a season"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "153"
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/PassAccuracy",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "range" : "38",
-    "label" : {
-      "IRI-based" : "PassAccuracy",
-      "iri-based" : "PassAccuracy",
-      "en" : "PassAccuracy"
-    },
-    "domain" : "10",
-    "comment" : {
-      "undefined" : "The pass accuracy of a player in a season"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "154"
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/PlayerBirthdate",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "range" : "37",
-    "label" : {
-      "IRI-based" : "PlayerBirthdate",
-      "iri-based" : "PlayerBirthdate",
-      "en" : "PlayerBirthdate"
-    },
-    "domain" : "42",
-    "comment" : {
-      "undefined" : "The birthday of a player"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "155"
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/CPreferredFormation",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "range" : "138",
-    "label" : {
-      "IRI-based" : "CPreferredFormation",
-      "iri-based" : "CPreferredFormation",
-      "en" : "CPreferredFormation"
-    },
-    "domain" : "13",
-    "comment" : {
-      "undefined" : "The preferred formation of a coach"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "156"
-  }, {
-    "iri" : "http://visualdataweb.org/newOntology/MatchWinner",
-    "baseIri" : "http://visualdataweb.org/newOntology",
-    "range" : "52",
-    "label" : {
-      "IRI-based" : "MatchWinner",
-      "iri-based" : "MatchWinner",
-      "en" : "MatchWinner"
-    },
-    "domain" : "19",
-    "comment" : {
-      "undefined" : "The winner of a specific match"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "157"
-  } ]
+  ]
 }

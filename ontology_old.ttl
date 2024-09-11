@@ -1,34 +1,30 @@
 @prefix : <http://visualdataweb.org/newOntology/> .
-@prefix dc: <http://purl.org/dc/elements/1.1/#> .
-@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix wot: <http://xmlns.com/wot/0.1/> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @base <http://visualdataweb.org/newOntology/> .
 
 <http://visualdataweb.org/newOntology/> rdf:type owl:Ontology ;
-                                         dc:description "An ontology about the football domain"@en ;
-                                         dc:license "https://creativecommons.org/licenses/by/4.0/" ;
-                                         dc:title "Footology"@en .
+                                         <http://purl.org/dc/elements/1.1/#description> "An ontology about the football domain"@en ;
+                                         <http://purl.org/dc/elements/1.1/#license> "https://creativecommons.org/licenses/by/4.0/" ;
+                                         <http://purl.org/dc/elements/1.1/#title> "Footology"@en .
 
 #################################################################
 #    Annotation properties
 #################################################################
 
 ###  http://purl.org/dc/elements/1.1/#description
-dc:description rdf:type owl:AnnotationProperty .
+<http://purl.org/dc/elements/1.1/#description> rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/elements/1.1/#license
-dc:license rdf:type owl:AnnotationProperty .
+<http://purl.org/dc/elements/1.1/#license> rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/elements/1.1/#title
-dc:title rdf:type owl:AnnotationProperty .
+<http://purl.org/dc/elements/1.1/#title> rdf:type owl:AnnotationProperty .
 
 
 #################################################################
@@ -43,20 +39,6 @@ dc:title rdf:type owl:AnnotationProperty .
             rdfs:comment "This represents a relationship between a team and a match" ;
             rdfs:label "competesIn"@en ,
                        "competesIn"@iri-based .
-
-
-###  http://visualdataweb.org/newOntology/hasPerformanceStats
-:hasPerformanceStats rdf:type owl:ObjectProperty ;
-                     owl:inverseOf :occuredInMatch ;
-                     rdfs:domain :Match ;
-                     rdfs:range :PerformanceStats .
-
-
-###  http://visualdataweb.org/newOntology/hasPlayer
-:hasPlayer rdf:type owl:ObjectProperty ;
-           owl:inverseOf :participatesIn ;
-           rdfs:domain :Match ;
-           rdfs:range :Player .
 
 
 ###  http://visualdataweb.org/newOntology/hasPosition
@@ -176,12 +158,6 @@ dc:title rdf:type owl:AnnotationProperty .
                     "manages"@iri-based .
 
 
-###  http://visualdataweb.org/newOntology/occuredInMatch
-:occuredInMatch rdf:type owl:ObjectProperty ;
-                rdfs:domain :PerformanceStats ;
-                rdfs:range :Match .
-
-
 ###  http://visualdataweb.org/newOntology/officiatedBy
 :officiatedBy rdf:type owl:ObjectProperty ;
               owl:inverseOf :officiates ;
@@ -211,12 +187,6 @@ dc:title rdf:type owl:AnnotationProperty .
         rdfs:comment "The tournament a specific team is part of" ;
         rdfs:label "partOf"@en ,
                    "partOf"@iri-based .
-
-
-###  http://visualdataweb.org/newOntology/participatesIn
-:participatesIn rdf:type owl:ObjectProperty ;
-                rdfs:domain :Player ;
-                rdfs:range :Match .
 
 
 ###  http://visualdataweb.org/newOntology/playsFor
@@ -287,8 +257,8 @@ dc:title rdf:type owl:AnnotationProperty .
          rdfs:domain :PerformanceStats ;
          rdfs:range xsd:integer ;
          rdfs:comment "The assists of a specific player within a season" ;
-         rdfs:label "assists"@en ,
-                    "assists" .
+         rdfs:label "Assists"@en ,
+                    "Assists"@iri-based .
 
 
 ###  http://visualdataweb.org/newOntology/AwardName
@@ -296,8 +266,8 @@ dc:title rdf:type owl:AnnotationProperty .
            rdfs:domain :Award ;
            rdfs:range xsd:string ;
            rdfs:comment "The indivual award name" ;
-           rdfs:label "awardName"@en ,
-                      "awardName" .
+           rdfs:label "AwardName"@en ,
+                      "AwardName"@iri-based .
 
 
 ###  http://visualdataweb.org/newOntology/AwardSeason
@@ -305,8 +275,8 @@ dc:title rdf:type owl:AnnotationProperty .
              rdfs:domain :Award ;
              rdfs:range xsd:string ;
              rdfs:comment "The season of an award" ;
-             rdfs:label "awardSeason"@en ,
-                        "awardSeason" .
+             rdfs:label "AwardSeason"@en ,
+                        "AwardSeason"@iri-based .
 
 
 ###  http://visualdataweb.org/newOntology/CPreferredFormation
@@ -314,8 +284,8 @@ dc:title rdf:type owl:AnnotationProperty .
                      rdfs:domain :Coach ;
                      rdfs:range rdfs:Literal ;
                      rdfs:comment "The preferred formation of a coach" ;
-                     rdfs:label "cPreferredFormation"@en ,
-                                "cPreferredFormation" .
+                     rdfs:label "CPreferredFormation"@en ,
+                                "CPreferredFormation"@iri-based .
 
 
 ###  http://visualdataweb.org/newOntology/CPreviousTeams
@@ -323,8 +293,8 @@ dc:title rdf:type owl:AnnotationProperty .
                 rdfs:domain :Coach ;
                 rdfs:range xsd:string ;
                 rdfs:comment "The previous teams a coach has managed so far" ;
-                rdfs:label "cPreviousTeams"@en ,
-                           "cPreviousTeams" .
+                rdfs:label "CPreviousTeams"@en ,
+                           "CPreviousTeams"@iri-based .
 
 
 ###  http://visualdataweb.org/newOntology/Capacity
@@ -332,8 +302,8 @@ dc:title rdf:type owl:AnnotationProperty .
           rdfs:domain :Stadium ;
           rdfs:range xsd:integer ;
           rdfs:comment "The capacity of a stadium" ;
-          rdfs:label "capacity"@en ,
-                     "capacity" .
+          rdfs:label "Capacity"@en ,
+                     "Capacity"@iri-based .
 
 
 ###  http://visualdataweb.org/newOntology/Champion
@@ -341,8 +311,8 @@ dc:title rdf:type owl:AnnotationProperty .
           rdfs:domain :League ;
           rdfs:range xsd:string ;
           rdfs:comment "The current champion of a League" ;
-          rdfs:label "champion"@en ,
-                     "champion" .
+          rdfs:label "Champion"@en ,
+                     "Champion"@iri-based .
 
 
 ###  http://visualdataweb.org/newOntology/CoachName
@@ -350,8 +320,8 @@ dc:title rdf:type owl:AnnotationProperty .
            rdfs:domain :Coach ;
            rdfs:range xsd:string ;
            rdfs:comment "The name of a team coach" ;
-           rdfs:label "coachName"@en ,
-                      "coachName" .
+           rdfs:label "CoachName"@en ,
+                      "CoachName"@iri-based .
 
 
 ###  http://visualdataweb.org/newOntology/CoachNationality
@@ -359,8 +329,8 @@ dc:title rdf:type owl:AnnotationProperty .
                   rdfs:domain :Coach ;
                   rdfs:range xsd:string ;
                   rdfs:comment "The nationality of a coach" ;
-                  rdfs:label "coachNationality"@en ,
-                             "coachNationality" .
+                  rdfs:label "CoachNationality"@en ,
+                             "CoachNationality"@iri-based .
 
 
 ###  http://visualdataweb.org/newOntology/Date
@@ -368,17 +338,17 @@ dc:title rdf:type owl:AnnotationProperty .
       rdfs:domain :Match ;
       rdfs:range xsd:string ;
       rdfs:comment "The date when a match took place" ;
-      rdfs:label "date"@en ,
-                 "date" .
+      rdfs:label "Date"@en ,
+                 "Date"@iri-based .
 
 
 ###  http://visualdataweb.org/newOntology/Fouls
 :Fouls rdf:type owl:DatatypeProperty ;
        rdfs:domain :PerformanceStats ;
-       rdfs:range xsd:integer ;
+       rdfs:range xsd:string ;
        rdfs:comment "The fouls commited by a player" ;
-       rdfs:label "fouls"@en ,
-                  "fouls" .
+       rdfs:label "Fouls"@en ,
+                  "Fouls"@iri-based .
 
 
 ###  http://visualdataweb.org/newOntology/GoalsScored
@@ -386,8 +356,8 @@ dc:title rdf:type owl:AnnotationProperty .
              rdfs:domain :PerformanceStats ;
              rdfs:range xsd:integer ;
              rdfs:comment "The goals scored by a player" ;
-             rdfs:label "goalsScored"@en ,
-                        "goalsScored" .
+             rdfs:label "GoalsScored"@en ,
+                        "GoalsScored"@iri-based .
 
 
 ###  http://visualdataweb.org/newOntology/HomeTeam
@@ -395,8 +365,8 @@ dc:title rdf:type owl:AnnotationProperty .
           rdfs:domain :Stadium ;
           rdfs:range xsd:string ;
           rdfs:comment "The home team of a stadium" ;
-          rdfs:label "homeTeam"@en ,
-                     "homeTeam" .
+          rdfs:label "HomeTeam"@en ,
+                     "HomeTeam"@iri-based .
 
 
 ###  http://visualdataweb.org/newOntology/LeagueName
@@ -404,8 +374,8 @@ dc:title rdf:type owl:AnnotationProperty .
             rdfs:domain :League ;
             rdfs:range xsd:string ;
             rdfs:comment "The name of a league" ;
-            rdfs:label "leagueName"@en ,
-                       "leagueName" .
+            rdfs:label "LeagueName"@en ,
+                       "LeagueName"@iri-based .
 
 
 ###  http://visualdataweb.org/newOntology/MatchAwayTeam
@@ -413,8 +383,8 @@ dc:title rdf:type owl:AnnotationProperty .
                rdfs:domain :Match ;
                rdfs:range xsd:string ;
                rdfs:comment "The away team of a specific match" ;
-               rdfs:label "matchAwayTeam"@en ,
-                          "matchAwayTeam" .
+               rdfs:label "MatchAwayTeam"@en ,
+                          "MatchAwayTeam"@iri-based .
 
 
 ###  http://visualdataweb.org/newOntology/MatchHomeTeam
@@ -422,8 +392,8 @@ dc:title rdf:type owl:AnnotationProperty .
                rdfs:domain :Match ;
                rdfs:range xsd:string ;
                rdfs:comment "The home team of a specific match" ;
-               rdfs:label "matchHomeTeam"@en ,
-                          "matchHomeTeam" .
+               rdfs:label "MatchHomeTeam"@en ,
+                          "MatchHomeTeam"@iri-based .
 
 
 ###  http://visualdataweb.org/newOntology/MatchWinner
@@ -431,8 +401,8 @@ dc:title rdf:type owl:AnnotationProperty .
              rdfs:domain :Match ;
              rdfs:range xsd:string ;
              rdfs:comment "The winner of a specific match" ;
-             rdfs:label "matchWinner"@en ,
-                        "matchWinner" .
+             rdfs:label "MatchWinner"@en ,
+                        "MatchWinner"@iri-based .
 
 
 ###  http://visualdataweb.org/newOntology/NumberOfTeams
@@ -440,8 +410,8 @@ dc:title rdf:type owl:AnnotationProperty .
                rdfs:domain :League ;
                rdfs:range xsd:integer ;
                rdfs:comment "The number of teams competing in a specific league" ;
-               rdfs:label "numberOfTeams"@en ,
-                          "numberOfTeams" .
+               rdfs:label "NumberOfTeams"@en ,
+                          "NumberOfTeams"@iri-based .
 
 
 ###  http://visualdataweb.org/newOntology/OpeningYear
@@ -449,17 +419,17 @@ dc:title rdf:type owl:AnnotationProperty .
              rdfs:domain :Stadium ;
              rdfs:range xsd:integer ;
              rdfs:comment "The opening year of a stadium" ;
-             rdfs:label "openingYear"@en ,
-                        "openingYear" .
+             rdfs:label "OpeningYear"@en ,
+                        "OpeningYear"@iri-based .
 
 
 ###  http://visualdataweb.org/newOntology/PassAccuracy
 :PassAccuracy rdf:type owl:DatatypeProperty ;
               rdfs:domain :PerformanceStats ;
-              rdfs:range xsd:integer ;
+              rdfs:range xsd:string ;
               rdfs:comment "The pass accuracy of a player in a season" ;
-              rdfs:label "passAccuracy"@en ,
-                         "passAccuracy" .
+              rdfs:label "PassAccuracy"@en ,
+                         "PassAccuracy"@iri-based .
 
 
 ###  http://visualdataweb.org/newOntology/PlayerBirthdate
@@ -467,8 +437,8 @@ dc:title rdf:type owl:AnnotationProperty .
                  rdfs:domain :Player ;
                  rdfs:range xsd:string ;
                  rdfs:comment "The birthday of a player" ;
-                 rdfs:label "playerBirthdate"@en ,
-                            "playerBirthdate" .
+                 rdfs:label "PlayerBirthdate"@en ,
+                            "PlayerBirthdate"@iri-based .
 
 
 ###  http://visualdataweb.org/newOntology/PlayerName
@@ -476,8 +446,8 @@ dc:title rdf:type owl:AnnotationProperty .
             rdfs:domain :Player ;
             rdfs:range xsd:string ;
             rdfs:comment "The name of a player" ;
-            rdfs:label "playerName"@en ,
-                       "playerName" .
+            rdfs:label "PlayerName"@en ,
+                       "PlayerName"@iri-based .
 
 
 ###  http://visualdataweb.org/newOntology/PlayerPosition
@@ -485,7 +455,7 @@ dc:title rdf:type owl:AnnotationProperty .
                 rdfs:domain :Position ;
                 rdfs:range xsd:string ;
                 rdfs:comment "The position of a player" ;
-                rdfs:label "playerPosition"@en .
+                rdfs:label "PlayerPosition"@en .
 
 
 ###  http://visualdataweb.org/newOntology/RBirthdate
@@ -493,8 +463,8 @@ dc:title rdf:type owl:AnnotationProperty .
             rdfs:domain :Referee ;
             rdfs:range xsd:string ;
             rdfs:comment "The birthday of a referee" ;
-            rdfs:label "rBirthdate"@en ,
-                       "rBirthdate" .
+            rdfs:label "RBirthdate"@en ,
+                       "RBirthdate"@iri-based .
 
 
 ###  http://visualdataweb.org/newOntology/RedCards
@@ -502,8 +472,8 @@ dc:title rdf:type owl:AnnotationProperty .
           rdfs:domain :PerformanceStats ;
           rdfs:range xsd:string ;
           rdfs:comment "The red cards a player has gotten in a season" ;
-          rdfs:label "redCards"@en ,
-                     "redCards" .
+          rdfs:label "RedCards"@en ,
+                     "RedCards"@iri-based .
 
 
 ###  http://visualdataweb.org/newOntology/RefereeName
@@ -511,8 +481,8 @@ dc:title rdf:type owl:AnnotationProperty .
              rdfs:domain :Referee ;
              rdfs:range xsd:string ;
              rdfs:comment "The name of the referee" ;
-             rdfs:label "refereeName"@en ,
-                        "refereeName" .
+             rdfs:label "RefereeName"@en ,
+                        "RefereeName"@iri-based .
 
 
 ###  http://visualdataweb.org/newOntology/RefereeNationality
@@ -520,8 +490,8 @@ dc:title rdf:type owl:AnnotationProperty .
                     rdfs:domain :Referee ;
                     rdfs:range xsd:string ;
                     rdfs:comment "The nationality of a referee" ;
-                    rdfs:label "refereeNationality"@en ,
-                               "refereeNationality" .
+                    rdfs:label "RefereeNationality"@en ,
+                               "RefereeNationality"@iri-based .
 
 
 ###  http://visualdataweb.org/newOntology/Region
@@ -529,17 +499,17 @@ dc:title rdf:type owl:AnnotationProperty .
         rdfs:domain :League ;
         rdfs:range xsd:string ;
         rdfs:comment "The region or country a league is playing in" ;
-        rdfs:label "region"@en ,
-                   "region" .
+        rdfs:label "Region"@en ,
+                   "Region"@iri-based .
 
 
 ###  http://visualdataweb.org/newOntology/Score
 :Score rdf:type owl:DatatypeProperty ;
        rdfs:domain :Match ;
-       rdfs:range xsd:integer ;
+       rdfs:range xsd:string ;
        rdfs:comment "The final score of a match" ;
-       rdfs:label "score"@en ,
-                  "score" .
+       rdfs:label "Score"@en ,
+                  "Score"@iri-based .
 
 
 ###  http://visualdataweb.org/newOntology/Season
@@ -547,8 +517,8 @@ dc:title rdf:type owl:AnnotationProperty .
         rdfs:domain :PerformanceStats ;
         rdfs:range xsd:string ;
         rdfs:comment "The season of the performances of a player" ;
-        rdfs:label "season"@en ,
-                   "season" .
+        rdfs:label "Season"@en ,
+                   "Season"@iri-based .
 
 
 ###  http://visualdataweb.org/newOntology/SeasonYear
@@ -556,8 +526,8 @@ dc:title rdf:type owl:AnnotationProperty .
             rdfs:domain :League ;
             rdfs:range xsd:string ;
             rdfs:comment "The season of a League" ;
-            rdfs:label "seasonYear"@en ,
-                       "seasonYear" .
+            rdfs:label "SeasonYeaR"@en ,
+                       "SeasonYear"@iri-based .
 
 
 ###  http://visualdataweb.org/newOntology/StadiumName
@@ -565,8 +535,8 @@ dc:title rdf:type owl:AnnotationProperty .
              rdfs:domain :Stadium ;
              rdfs:range xsd:string ;
              rdfs:comment "The name of a stadium" ;
-             rdfs:label "stadiumName"@en ,
-                        "stadiumName" .
+             rdfs:label "StadiumName"@en ,
+                        "StadiumName"@iri-based .
 
 
 ###  http://visualdataweb.org/newOntology/StadiumRegion
@@ -574,8 +544,8 @@ dc:title rdf:type owl:AnnotationProperty .
                rdfs:domain :Stadium ;
                rdfs:range xsd:string ;
                rdfs:comment "The region or country a stadium is located in" ;
-               rdfs:label "stadiumRegion"@en ,
-                          "stadiumRegion" .
+               rdfs:label "StadiumRegion"@en ,
+                          "StadiumRegion"@iri-based .
 
 
 ###  http://visualdataweb.org/newOntology/TeamFormation
@@ -583,8 +553,8 @@ dc:title rdf:type owl:AnnotationProperty .
                rdfs:domain :Team ;
                rdfs:range xsd:string ;
                rdfs:comment "The formation of a team" ;
-               rdfs:label "teamFormation"@en ,
-                          "teamFormation" .
+               rdfs:label "TeamFormation"@en ,
+                          "TeamFormation"@iri-based .
 
 
 ###  http://visualdataweb.org/newOntology/TeamLeague
@@ -592,8 +562,8 @@ dc:title rdf:type owl:AnnotationProperty .
             rdfs:domain :Team ;
             rdfs:range xsd:string ;
             rdfs:comment "The league a team is playing in" ;
-            rdfs:label "teamLeague"@en ,
-                       "teamLeague" .
+            rdfs:label "TeamLeague"@en ,
+                       "TeamLeague"@iri-based .
 
 
 ###  http://visualdataweb.org/newOntology/TeamName
@@ -601,8 +571,8 @@ dc:title rdf:type owl:AnnotationProperty .
           rdfs:domain :Team ;
           rdfs:range xsd:string ;
           rdfs:comment "The name of a team" ;
-          rdfs:label "teamName"@en ,
-                     "teamName" .
+          rdfs:label "TeamName"@en ,
+                     "TeamName"@iri-based .
 
 
 ###  http://visualdataweb.org/newOntology/TeamRanking
@@ -610,17 +580,18 @@ dc:title rdf:type owl:AnnotationProperty .
              rdfs:domain :Team ;
              rdfs:range xsd:integer ;
              rdfs:comment "The league ranking of a team" ;
-             rdfs:label "teamRanking"@en ,
-                        "teamRanking" .
+             rdfs:label "TeamRanking"@en ,
+                        "TeamRanking"@iri-based .
 
 
 ###  http://visualdataweb.org/newOntology/TeamSeason
 :TeamSeason rdf:type owl:DatatypeProperty ;
             rdfs:domain :Team ;
             rdfs:range xsd:string ;
-            rdfs:comment "The season of a team" ;
-            rdfs:label "teamSeason"@en ,
-                       "teamSeason" .
+            rdfs:comment "The season of a team" ,
+                         "The season of the team" ;
+            rdfs:label "TeamSeason"@en ,
+                       "TeamSeason"@iri-based .
 
 
 ###  http://visualdataweb.org/newOntology/TournamentChampion
@@ -628,8 +599,8 @@ dc:title rdf:type owl:AnnotationProperty .
                     rdfs:domain :Tournament ;
                     rdfs:range xsd:string ;
                     rdfs:comment "The champion of a specific tournament" ;
-                    rdfs:label "tournamentChampion"@en ,
-                               "tournamentChampion" .
+                    rdfs:label "TournamentChampion"@en ,
+                               "TournamentChampion"@iri-based .
 
 
 ###  http://visualdataweb.org/newOntology/TournamentName
@@ -637,8 +608,8 @@ dc:title rdf:type owl:AnnotationProperty .
                 rdfs:domain :Tournament ;
                 rdfs:range xsd:string ;
                 rdfs:comment "The name of the tournament" ;
-                rdfs:label "tournamentName"@en ,
-                           "tournamentName" .
+                rdfs:label "TournamentName"@en ,
+                           "TournamentName"@iri-based .
 
 
 ###  http://visualdataweb.org/newOntology/TournamentNumOfTeams
@@ -646,8 +617,8 @@ dc:title rdf:type owl:AnnotationProperty .
                       rdfs:domain :Tournament ;
                       rdfs:range xsd:integer ;
                       rdfs:comment "The number of teams in a tournament" ;
-                      rdfs:label "tournamentNumOfTeams"@en ,
-                                 "tournamentNumOfTeams" .
+                      rdfs:label "TournamentNumOfTeams"@en ,
+                                 "TournamentNumOfTeams"@iri-based .
 
 
 ###  http://visualdataweb.org/newOntology/TrophyAssociatedLeague
@@ -655,8 +626,8 @@ dc:title rdf:type owl:AnnotationProperty .
                         rdfs:domain :Trophy ;
                         rdfs:range xsd:string ;
                         rdfs:comment "What kind of team trophy, like DFB Pokal or other trophies from other countries" ;
-                        rdfs:label "trophyAssociatedLeague"@en ,
-                                   "trophyAssociatedLeague" .
+                        rdfs:label "TrophyAssociatedLeague"@en ,
+                                   "TrophyAssociatedLeague"@iri-based .
 
 
 ###  http://visualdataweb.org/newOntology/TrophyName
@@ -664,8 +635,8 @@ dc:title rdf:type owl:AnnotationProperty .
             rdfs:domain :Trophy ;
             rdfs:range xsd:string ;
             rdfs:comment "The name of a trophy" ;
-            rdfs:label "trophyName"@en ,
-                       "trophyName" .
+            rdfs:label "TrophyName"@en ,
+                       "TrophyName"@iri-based .
 
 
 ###  http://visualdataweb.org/newOntology/TrophyWinner
@@ -673,8 +644,8 @@ dc:title rdf:type owl:AnnotationProperty .
               rdfs:domain :Trophy ;
               rdfs:range xsd:string ;
               rdfs:comment "The winner of a trophy" ;
-              rdfs:label "trophyWinner"@en ,
-                         "trophyWinner" .
+              rdfs:label "TrophyWinner"@en ,
+                         "TrophyWinner"@iri-based .
 
 
 ###  http://visualdataweb.org/newOntology/YellowCards
@@ -682,8 +653,8 @@ dc:title rdf:type owl:AnnotationProperty .
              rdfs:domain :PerformanceStats ;
              rdfs:range xsd:integer ;
              rdfs:comment "The yellow cards a player has got in a specific season" ;
-             rdfs:label "yellowCards"@en ,
-                        "yellowCards" .
+             rdfs:label "YellowCards"@en ,
+                        "YellowCards"@iri-based .
 
 
 ###  http://visualdataweb.org/newOntology/height
@@ -702,15 +673,53 @@ dc:title rdf:type owl:AnnotationProperty .
 ###  http://visualdataweb.org/newOntology/Award
 :Award rdf:type owl:Class ;
        rdfs:comment "An indivual award won by a player" ;
-       rdfs:label "award"@en ,
-                  "award" .
+       rdfs:label "Award"@en ,
+                  "Award"@iri-based .
+
+
+###  http://visualdataweb.org/newOntology/CenterBack
+:CenterBack rdf:type owl:Class ;
+            rdfs:subClassOf :Defender ;
+            rdfs:comment "The centerback position of a player" ;
+            rdfs:label "CenterBack"@iri-based .
 
 
 ###  http://visualdataweb.org/newOntology/Coach
 :Coach rdf:type owl:Class ;
        rdfs:comment "The coach managing a team" ;
-       rdfs:label "coach"@en ,
-                  "coach" .
+       rdfs:label "Coach"@en ,
+                  "Coach"@iri-based .
+
+
+###  http://visualdataweb.org/newOntology/Defender
+:Defender rdf:type owl:Class ;
+          rdfs:subClassOf :Position ;
+          rdfs:comment "A generic subclass for defenders in football" ;
+          rdfs:label "Defender"@en ,
+                     "Defender"@iri-based .
+
+
+###  http://visualdataweb.org/newOntology/DefensiveMidfielder
+:DefensiveMidfielder rdf:type owl:Class ;
+                     rdfs:subClassOf :Midfielder ;
+                     rdfs:comment "The defensive midfielder position of a player" ;
+                     rdfs:label "DefensiveMidfielder"@iri-based .
+
+
+###  http://visualdataweb.org/newOntology/Forward
+:Forward rdf:type owl:Class ;
+         rdfs:subClassOf :Position ;
+         rdfs:comment "A generic class for the position Forward including subclasses" ;
+         rdfs:label "Forward"@en ,
+                    "Forward"@iri-based .
+
+
+###  http://visualdataweb.org/newOntology/Goalkeeper
+:Goalkeeper rdf:type owl:Class ;
+            rdfs:subClassOf :Position ;
+            rdfs:comment "The goalkeeper of a player" ;
+            rdfs:label "Goalkeeper"@en ,
+                       "Goalkeeper"@iri-based .
 
 
 ###  http://visualdataweb.org/newOntology/KnockOutTournament
@@ -718,77 +727,141 @@ dc:title rdf:type owl:AnnotationProperty .
                     rdfs:subClassOf :Tournament ;
                     owl:disjointWith :League ;
                     rdfs:comment "A knock-out pyramid style of a tournament, where a team has to compete in a KO-Stage like quarter final, semi final and final" ;
-                    rdfs:label "knockOutTournament" .
+                    rdfs:label "KnockOutTournament"@iri-based .
 
 
 ###  http://visualdataweb.org/newOntology/League
 :League rdf:type owl:Class ;
         rdfs:subClassOf :Tournament ;
         rdfs:comment "A league type of tournament, where a team competes with many other teams of a specific league, winning 3, 1, or 0 points each game. At the end of the season, the team that has the most points wins the league" ;
-        rdfs:label "league"@en ,
-                   "league" .
+        rdfs:label "League"@en ,
+                   "League"@iri-based .
+
+
+###  http://visualdataweb.org/newOntology/LeftBack
+:LeftBack rdf:type owl:Class ;
+          rdfs:subClassOf :Defender ;
+          rdfs:comment "A left back position of a player" ;
+          rdfs:label "LeftBack"@iri-based .
+
+
+###  http://visualdataweb.org/newOntology/LeftMidfield
+:LeftMidfield rdf:type owl:Class ;
+              rdfs:subClassOf :Midfielder ;
+              rdfs:comment "The left midfield position of a player" ;
+              rdfs:label "LeftMidfield"@iri-based .
+
+
+###  http://visualdataweb.org/newOntology/LeftWing
+:LeftWing rdf:type owl:Class ;
+          rdfs:subClassOf :Forward ;
+          rdfs:comment "The left wing position of a player" ;
+          rdfs:label "LeftWing"@iri-based .
 
 
 ###  http://visualdataweb.org/newOntology/Match
 :Match rdf:type owl:Class ;
        rdfs:comment "A competetive football event held between two teams" ;
-       rdfs:label "match"@en ,
-                  "match" .
+       rdfs:label "Match"@en ,
+                  "Match"@iri-based .
+
+
+###  http://visualdataweb.org/newOntology/Midfielder
+:Midfielder rdf:type owl:Class ;
+            rdfs:subClassOf :Position ;
+            rdfs:comment "The generic class of a midfielder, including subclasses" ;
+            rdfs:label "Midfielder"@en ,
+                       "Midfielder"@iri-based .
+
+
+###  http://visualdataweb.org/newOntology/OffensiveMidfielder
+:OffensiveMidfielder rdf:type owl:Class ;
+                     rdfs:subClassOf :Midfielder ;
+                     rdfs:comment "The offensive midfielder position of a player" ;
+                     rdfs:label "OffensiveMidfielder"@iri-based .
 
 
 ###  http://visualdataweb.org/newOntology/PerformanceStats
 :PerformanceStats rdf:type owl:Class ;
                   rdfs:comment "The perfomance statistics of a player like goal scored, assists and so on." ;
-                  rdfs:label "performanceStats"@en ,
-                             "performanceStats" .
+                  rdfs:label "PerformanceStats"@en ,
+                             "PerformanceStats"@iri-based .
 
 
 ###  http://visualdataweb.org/newOntology/Player
 :Player rdf:type owl:Class ;
         rdfs:comment "A professional football player" ;
-        rdfs:label "player"@en ,
-                   "player" .
+        rdfs:label "Player"@en ,
+                   "Player"@iri-based .
 
 
 ###  http://visualdataweb.org/newOntology/Position
 :Position rdf:type owl:Class ;
           rdfs:comment "This class shows the parent class \"Position\" which includes subclasses of positions of a player" ;
-          rdfs:label "position"@en .
+          rdfs:label "Position"@en .
 
 
 ###  http://visualdataweb.org/newOntology/Referee
 :Referee rdf:type owl:Class ;
          rdfs:comment "The referee officiating a football match" ;
-         rdfs:label "referee"@en ,
-                    "referee" .
+         rdfs:label "Referee"@en ,
+                    "Referee"@iri-based .
+
+
+###  http://visualdataweb.org/newOntology/RightBack
+:RightBack rdf:type owl:Class ;
+           rdfs:subClassOf :Defender ;
+           rdfs:comment "A right back position of a player" ;
+           rdfs:label "RightBack"@iri-based .
+
+
+###  http://visualdataweb.org/newOntology/RightMidfield
+:RightMidfield rdf:type owl:Class ;
+               rdfs:subClassOf :Midfielder ;
+               rdfs:comment "The right midfield position of a player" ;
+               rdfs:label "RightMidfield"@iri-based .
+
+
+###  http://visualdataweb.org/newOntology/RightWing
+:RightWing rdf:type owl:Class ;
+           rdfs:subClassOf :Forward ;
+           rdfs:comment "The right wing position of a player" ;
+           rdfs:label "RightWing"@iri-based .
 
 
 ###  http://visualdataweb.org/newOntology/Stadium
 :Stadium rdf:type owl:Class ;
          rdfs:comment "The stadium of a football team" ;
-         rdfs:label "stadium"@en ,
-                    "stadium" .
+         rdfs:label "Stadium"@en ,
+                    "Stadium"@iri-based .
+
+
+###  http://visualdataweb.org/newOntology/Striker
+:Striker rdf:type owl:Class ;
+         rdfs:subClassOf :Forward ;
+         rdfs:comment "The main striker position of a player" ;
+         rdfs:label "Striker"@iri-based .
 
 
 ###  http://visualdataweb.org/newOntology/Team
 :Team rdf:type owl:Class ;
       rdfs:comment "A professional football team" ;
-      rdfs:label "team"@en ,
-                 "team" .
+      rdfs:label "Team"@en ,
+                 "Team"@iri-based .
 
 
 ###  http://visualdataweb.org/newOntology/Tournament
 :Tournament rdf:type owl:Class ;
             rdfs:comment "The tournament a team is currently competing in" ;
-            rdfs:label "tournament"@en ,
-                       "tournament" .
+            rdfs:label "Tournament"@en ,
+                       "Tournament"@iri-based .
 
 
 ###  http://visualdataweb.org/newOntology/Trophy
 :Trophy rdf:type owl:Class ;
         rdfs:comment "A trophy won by a team" ;
-        rdfs:label "trophy"@en ,
-                   "trophy" .
+        rdfs:label "Trophy"@en ,
+                   "Trophy"@iri-based .
 
 
-###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
